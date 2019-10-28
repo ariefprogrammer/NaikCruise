@@ -20,6 +20,8 @@
   <!-- Custom styles for this template-->
   <link href="<?php echo base_url('css/sb-admin.css')?>" rel="stylesheet">
 
+  <link rel="stylesheet" type="text/css" href="<?php echo base_url('css2/bootstrap.min.css')?>">
+
   <link href="<?php echo base_url('css/styles.css')?>" rel="stylesheet">
 
 </head>

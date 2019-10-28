@@ -1,29 +1,110 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-	
-<!-- <div class="login">
-  <div class="login-triangle"></div>
-  
-  <h2 class="login-header">New Product</h2>
-
-  <form method="post" class="login-container">
-    <p><input type="email" placeholder="Email"></p>
-    <p><input type="password" placeholder="Password"></p>
-    <p><input type="submit" value="Log in"></p>
-  </form>
-</div> -->
 
 	<form method="post" class="form-horizontal formm">
 		<div class="form-group">
-			<label>Product Name</label>
+			<label>Name</label>
 			<input class="form-control" type="text" placeholder="Input as the text" name="product_name" value="">
 		</div>
 
 		<div class="form-group">
-			<label>Product Code</label>
+			<label>Code</label>
 			<input class="form-control" type="text" name="product_code" placeholder="Input as the number" value="">
 		</div>
 
-		<button name="submit_product" class="btn btn-primary">Save</button>
+		<div class="form-group">
+			<label>Position Order</label>
+			<input class="form-control" type="number" name="position_order" placeholder="Position order is optional" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Slug</label>
+			<input class="form-control" type="text" name="product_slug" placeholder="Input slug without space" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Collection</label>
+			<input class="form-control" type="text" name="product_collection" placeholder="Input as the number" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Maximum Child Age</label>
+			<input class="form-control" type="number" name="product_maximum_child_age" placeholder="Input as the number" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Highlight Date</label>
+			<input class="form-control" type="date" name="product_highlight_date" placeholder="Click here to choose" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Total Days</label>
+			<input class="form-control" type="number" name="product_total_days" placeholder="Input as the number" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Total Nights</label>
+			<input class="form-control" type="number" name="product_total_nights" placeholder="Input as the number" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Starting Price</label>
+			<input class="form-control" type="text" name="product_starting_price" placeholder="Default IDR" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Price Info</label>
+			<textarea class="ckeditor" id="ckedtor" name="product_price_info"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label>Transportation</label>
+			<input class="form-control" type="text" name="product_transportation" placeholder="What cruise type" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Accomodation</label>
+			<input class="form-control" type="text" name="product_accomodation" placeholder="Insert here" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Included</label>
+			<textarea class="ckeditor" id="ckedtor" name="product_included"></textarea>
+			<!-- <input class="form-control" type="text" name="product_included" placeholder="Insert here" value=""> -->
+		</div>
+
+		<div class="form-group">
+			<label>Excluded</label>
+			<textarea class="ckeditor" id="ckedtor" name="product_excluded"></textarea>
+			<!-- <input class="form-control" type="text" name="product_excluded" placeholder="Insert here" value=""> -->
+		</div>
+
+		<div class="form-group">
+			<label>Terms</label>
+			<textarea class="ckeditor" id="ckedtor" name="product_terms"></textarea>
+			<!-- <input class="form-control" type="text" name="product_terms" placeholder="Input as the number" value="">-->
+		</div>
+
+		<div class="form-group">
+			<label>thumbnail</label>
+			<input class="form-control" type="text" name="product_thumbnail" placeholder="Type link here" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Flyer</label>
+			<input class="form-control" type="text" name="product_code" placeholder="Type link here" value="">
+		</div>
+
+		<div class="form-group">
+			<label>Status</label>
+			<select class="form-control" name="product_status">
+		      <option>Draft</option>
+		      <option>Publish</option>
+		    </select>
+		</div>
+
+		<div class="text-center">
+			<button name="submit_product" class="btn btn-primary">Save</button>
+		</div>
 	</form>
 
 <?php $this->load->view("admin/_partialsAdmin/footer")?>

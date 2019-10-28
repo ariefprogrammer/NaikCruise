@@ -39,6 +39,9 @@
   </div>
 
   <!-- Bootstrap core JavaScript-->
+
+  <script type="text/javascript" src="<?php echo base_url('ckeditor/ckeditor.js')?>"></script>
+
   <script src="<?php echo base_url('assets/jquery/jquery.min.js')?>"></script>
   <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 

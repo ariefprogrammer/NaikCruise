@@ -10,6 +10,7 @@ class Products extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
+		$this->load->model('MProducts');
 		//$this->load->model('MProducts');
 	}
 
@@ -22,7 +23,7 @@ class Products extends CI_Controller
 	{
 		if(isset($_POST['submit_product'])){
 			$this->MProducts->save($_POST);
-			redirect("admin/AddProduct");
+			redirect("admin/products");
 		}
 		$this->load->view("admin/v_AddProduct");
 	}

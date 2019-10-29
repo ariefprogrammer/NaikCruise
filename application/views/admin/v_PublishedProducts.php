@@ -1,3 +1,53 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
-<h3>Published products</h3>
+<!-- <?php var_dump($published)?> -->
+
+        <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            List All Products</div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Position Order</th>
+                    <th class="text-center">Slug</th>
+                    <th class="text-center">Collection</th>
+                    <!-- <th>Starting Price</th> -->
+                    <th class="text-center">Transportation</th>
+                    <!-- <th>Child</th> -->
+                    <th class="text-center">Status</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                	<?php foreach ($published as $row):?>
+                  <tr>
+                    <td><?php echo $row->id?></td>
+                    <td><?php echo $row->product_name?></td>
+                    <td><?php echo $row->position_order?></td>
+                    <td><?php echo $row->product_slug?></td>
+                    <td><?php echo $row->product_collection?></td>
+                    <!-- <td><?php echo $row->product_starting_price?></td> -->
+                    <td><?php echo $row->product_transportation?></td>
+                    <!-- <td><?php echo $row->product_maximum_child_age?></td> -->
+                    <td><?php echo $row->product_status?></td>
+                    <td width="150" class="text-center">
+                      <a href="<?php echo site_url('admin/products/lihat/'.$row->id)?>"
+                       class="btn btn-small"><i class="fas fa-eye"></i></a>
+                      <a href="<?php echo site_url('admin/products/update/'.$row->id)?>"
+                       class="btn btn-small"><i class="fas fa-edit"></i></a>
+                      <a onclick="deleteConfirm('<?php echo site_url('admin/products/deletePublished/'.$row->id)?>')" href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
+                    </td>
+                  </tr>
+                  <?php endforeach;?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+        </div>
+
 <?php $this->load->view("admin/_partialsAdmin/footer")?>

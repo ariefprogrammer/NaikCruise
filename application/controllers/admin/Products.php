@@ -16,7 +16,8 @@ class Products extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view("admin/v_ListProducts");
+		$data["allProducts"] = $this->MProducts->getAll();
+		$this->load->view("admin/v_ListProducts", $data);
 	}
 
 	public function add()
@@ -30,12 +31,51 @@ class Products extends CI_Controller
 
 	public function published()
 	{
-		$this->load->view("admin/v_PublishedProducts");
+		$data["published"] = $this->MProducts->published();
+		$this->load->view("admin/v_PublishedProducts", $data);
 	}
 
 	public function draft()
 	{
-		$this->load->view("admin/v_DraftProducts");
+		$data["draft"] = $this->MProducts->draft();
+		$this->load->view("admin/v_DraftProducts", $data);
+	}
+
+	public function lihat($id)
+	{
+		$data["product"] = $this->MProducts->getById($id);
+		$this->load->view("admin/v_DetailsProduct", $data);
+	}
+
+	public function update($id)
+	{
+		if (isset($_POST['update_product'])) {
+			$this->MProducts->update($_POST, $id);
+			redirect("admin/products");
+		}
+		$data["edit"] = $this->MProducts->getById($id);
+		$this->load->view("admin/v_EditProduct", $data);
+	}
+
+	public function deleteList($id)
+	{
+		if ($this->MProducts->deleteList($id)) {
+			redirect("admin/products");
+		}
+	}
+
+	public function deletePublished($id)
+	{
+		if ($this->MProducts->deleteList($id)) {
+			redirect("admin/products/published");
+		}
+	}
+
+	public function deleteDraft($id)
+	{
+		if ($this->MProducts->deleteList($id)) {
+			redirect("admin/products/draft");
+		}
 	}
 }
 

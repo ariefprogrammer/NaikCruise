@@ -14,7 +14,12 @@ class Beranda extends CI_Controller
 
 	public function index()
 	{
-		$this->load->view("admin/v_home_admin");
+		if ($this->session->userdata('isloggedin')) {
+			$this->load->view("admin/v_home_admin");	
+		}else{
+			redirect('admin/user/login');
+		}
+		
 	}
 
 

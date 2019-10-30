@@ -93,7 +93,7 @@
 
     <!-- Sidebar -->
     <ul class="sidebar navbar-nav">
-      <li class="nav-item active">
+      <li class="nav-item <?php echo $this->uri->segment(2)== '' && $this->uri->segment(3) == ''? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin')?>">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span>
@@ -113,25 +113,25 @@
         </div>
       </li> -->
 
-      <li class="nav-item">
+      <li class="nav-item <?php echo $this->uri->segment(2) == 'products' && $this->uri->segment(3) == ''? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin/products')?>">
           <i class="fa fa-suitcase"></i>
           <span>All Products</span></a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item <?php echo $this->uri->segment(3)== 'add'? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin/products/add')?>">
           <i class="fa fa-plus-circle"></i>
           <span>Add New</span></a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item <?php echo $this->uri->segment(3)== 'published'? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin/products/published')?>">
           <i class="fa fa-globe"></i>
           <span>Published</span></a>
       </li>
 
-      <li class="nav-item">
+      <li class="nav-item <?php echo $this->uri->segment(3)== 'draft'? 'active': ''?>">
         <a class="nav-link" href="<?php echo site_url('admin/products/draft')?>">
           <i class="fa fa-clock"></i>
           <span>Draft</span></a>

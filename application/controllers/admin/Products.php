@@ -16,8 +16,13 @@ class Products extends CI_Controller
 
 	public function index()
 	{
-		$data["allProducts"] = $this->MProducts->getAll();
-		$this->load->view("admin/v_ListProducts", $data);
+		if ($this->session->userdata('isloggedin')) {
+			$data["allProducts"] = $this->MProducts->getAll();
+			$this->load->view("admin/v_ListProducts", $data);
+		}else{
+			redirect('admin/user/login');
+		}
+		
 	}
 
 	public function add()
@@ -31,20 +36,34 @@ class Products extends CI_Controller
 
 	public function published()
 	{
-		$data["published"] = $this->MProducts->published();
-		$this->load->view("admin/v_PublishedProducts", $data);
+		if ($this->session->userdata('isloggedin')) {
+			$data["published"] = $this->MProducts->published();
+			$this->load->view("admin/v_PublishedProducts", $data);
+		}else{
+			redirect("admin/user/login");
+		}
+		
 	}
 
 	public function draft()
 	{
-		$data["draft"] = $this->MProducts->draft();
-		$this->load->view("admin/v_DraftProducts", $data);
+		if ($this->session->userdata('isloggedin')) {
+			$data["draft"] = $this->MProducts->draft();
+			$this->load->view("admin/v_DraftProducts", $data);
+		}else{
+			redirect("admin/user/login");
+		}
 	}
 
 	public function lihat($id)
 	{
-		$data["product"] = $this->MProducts->getById($id);
-		$this->load->view("admin/v_DetailsProduct", $data);
+		if ($this->session->userdata('isloggedin')) {
+			$data["product"] = $this->MProducts->getById($id);
+			$this->load->view("admin/v_DetailsProduct", $data);
+		}else{
+			redirect("admin/user/login");
+		}
+		
 	}
 
 	public function update($id)

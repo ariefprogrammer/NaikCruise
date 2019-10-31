@@ -1,6 +1,21 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
 
+<?php 
+	if (isset($lastId->id_product)) {
+		$oldId = intval($lastId->id_product);
+		$newId = $oldId + 1;
+	}else
+	{
+		$newId = 1;
+	}
+?>
+
 	<form method="post" class="form-horizontal formm">
+		<div class="form-group">
+			<label>ID</label>
+			<input class="form-control" type="text" name="id_product" value="<?php echo $newId?>">
+		</div>
+
 		<div class="form-group">
 			<label>Name</label>
 			<input class="form-control" type="text" placeholder="Input as the text" name="product_name" value="">

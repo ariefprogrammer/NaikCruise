@@ -1,12 +1,20 @@
 <?php $this->load->view("admin/_partialsAdmin/header")?>
 <!-- <?php var_dump($product)?> -->
+
 <div class="container" style="margin-top: 35px;">
   <div class="row">
+    <div style="margin:5px; margin-left: 25px"><a class="btn btn-primary" href="<?php echo site_url('admin/products/update/'.$product->id_product)?>" role="button">Update</a></div>
+    <div style="margin:5px"><a class="btn btn-danger" href="#!" onclick="deleteConfirm('<?php echo site_url('admin/products/deleteList/'.$product->id_product) ?>')">Delete</a></div>
+  </div>
+
+<!-- <a onclick="deleteConfirm('<?php echo site_url('admin/products/deleteList/'.$row->id_product) ?>')"href="#!" class="btn btn-danger">delete</a> -->
+
+  <div class="row" style="margin-top: 5px">
     <div class="col-md-3">
       ID
     </div>
     <div class="col-md-9">
-      <?php echo ":    " .$product->id?>
+      <?php echo ":    " .$product->id_product?>
     </div>
   </div>
 
@@ -180,6 +188,62 @@
       <?php echo ":    " .$product->product_status?>
     </div>
   </div>
+
+  <hr>
+  <br>
+
+  <div style="margin: 20px">
+    <a class="btn btn-primary" href="<?php echo site_url('admin/products/addItinerary/'.$product->id_product)?>" role="button">Add Itinerary</a>
+  </div>
+
+    <div class="card mb-3">
+          <div class="card-header">
+            <i class="fas fa-table"></i>
+            Itineraries Product</div>
+          <div class="card-body">
+            <div class="table-responsive">
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                  <tr>
+                    <th class="text-center">ID</th>
+                    <th class="text-center">Day</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Note</th>
+                    <th class="text-center">image</th>
+                    <th class="text-center">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <?php foreach ($lihatItinerary as $row):?>
+                  <tr>
+                    <td><?php echo $row->id_itinerary?></td>
+                    <td><?php echo $row->day_itinerary?></td>
+                    <td><?php echo $row->name_itinerary?></td>
+                    <td><?php echo $row->note_itinerary?></td>
+                    <td><?php echo $row->img_itinerary?></td>
+                    <td width="150" class="text-center">
+                      <!-- <a href="<?php echo site_url('admin/products/lihat/'.$row->id_itinerary)?>"
+                       class="btn btn-small"><i class="fas fa-eye"></i></a> -->
+                      <a href="<?php echo site_url('admin/products/updateItinerary/'.$row->id_itinerary.'/'.$this->uri->segment(4))?>"
+                       class="btn btn-small"><i class="fas fa-edit"></i></a>
+                      <a onclick="deleteConfirm('<?php echo site_url('admin/products/deleteItinerary/'.$row->id_itinerary).'/'.$this->uri->segment(4) ?>')"href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
+                    </td>
+                  </tr>
+                  <?php endforeach;?>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+
+  <hr>
+  <br>
+
+	<div style="margin: 20px">
+			<button class="btn btn-primary">Add Image Slider</button>
+	</div>
+
 
 </div>
 <?php $this->load->view("admin/_partialsAdmin/footer")?>

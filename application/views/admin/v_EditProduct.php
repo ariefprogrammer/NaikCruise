@@ -109,11 +109,12 @@
 	</form>
 
 	<script type="text/javascript">
-	  window.onbeforeunload = confirmExit;
-	  function confirmExit()
-	  {
-	    return "Do you want to leave this page without saving?";
-	  }
+		var update_product = false;
+	   	window.onbeforeunload = function () {
+	      if (!update_product) {
+	         return "Are you sure you want to navigate away from this page?";
+	      }
+	   	}
 	</script>
 
 <?php $this->load->view("admin/_partialsAdmin/footer")?>

@@ -13,7 +13,7 @@ class User extends CI_Controller {
         $this->session->set_userdata('isloggedin', false);
         $this->session->set_userdata('loguserid');
         $this->session->sess_destroy();
-        redirect('user/login');
+        redirect('admin/user/login');
     }
 
     public function login(){

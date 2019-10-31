@@ -28,10 +28,12 @@ class Products extends CI_Controller
 	public function add()
 	{
 		if(isset($_POST['submit_product'])){
+			$id_last = $this->input->post("id_product");
 			$this->MProducts->save($_POST);
-			redirect("admin/products");
+			redirect("admin/products/lihat/".$id_last);
 		}
-		$this->load->view("admin/v_AddProduct");
+		$data["lastId"] = $this->MProducts->getLastId();
+		$this->load->view("admin/v_AddProduct", $data);
 	}
 
 	public function published()
@@ -59,6 +61,7 @@ class Products extends CI_Controller
 	{
 		if ($this->session->userdata('isloggedin')) {
 			$data["product"] = $this->MProducts->getById($id);
+			$data["lihatItinerary"] = $this->MProducts->lihatItinerary($id);
 			$this->load->view("admin/v_DetailsProduct", $data);
 		}else{
 			redirect("admin/user/login");
@@ -94,6 +97,34 @@ class Products extends CI_Controller
 	{
 		if ($this->MProducts->deleteList($id)) {
 			redirect("admin/products/draft");
+		}
+	}
+
+	public function addItinerary()
+	{
+
+		if (isset($_POST['submit_itinerary'])) {
+			$last_id = $this->input->post("id_product");
+			$this->MProducts->addItinerary($_POST);
+			redirect("admin/products/lihat/".$last_id);
+		}
+	$this->load->view("admin/v_AddItinerary");	
+	}
+
+	public function updateItinerary($id_itinerary, $id_product)
+	{
+		if (isset($_POST['update_itinerary'])) {
+			$this->MProducts->updateItinerary($_POST, $id_itinerary);
+			redirect("admin/products/lihat/".$id_product); //cari id product, bukan id itinerary
+		}
+		$data["updateItinerary"] = $this->MProducts->getByIdItinerary($id_itinerary);
+		$this->load->view("admin/v_UpdateItinerary", $data);
+	}
+
+	public function deleteItinerary ($id_itinerary, $id_product)
+	{
+		if ($this->MProducts->deleteItinerary($id_itinerary)) {
+			redirect("admin/products/lihat/".$id_product);
 		}
 	}
 }

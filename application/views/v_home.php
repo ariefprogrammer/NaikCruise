@@ -1,395 +1,488 @@
-<?php $this->load->view("_partials/header")?>
-
-  <body>
-    <!-- Start slider -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="images/costa-swimming-pool_1298x420.png" alt="First slide">
+<?php $this->load->view("_partials/header")?>    
+    
+        <!--
+        Home Slider
+        ==================================== -->
+    
+    <section id="slider">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      
+        <!-- Indicators bullet -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+        <!-- End Indicators bullet -->        
+        
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          
+          <!-- single slide -->
+          <div class="item active" style="background-image: url(img3/banner.jpg);">
+            <div class="carousel-caption">
+              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Brandi</span>!</h2>
+              <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
+              <p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals</p>
+              
+              <ul class="social-links text-center">
+                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end single slide -->
+          
+          <!-- single slide -->
+          <div class="item" style="background-image: url(img3/banner.jpg);">
+            <div class="carousel-caption">
+              <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
+              <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
+              <p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
+              
+              <ul class="social-links text-center">
+                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- end single slide -->
+          
         </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/costa-swimming_1298x420.png" alt="Second slide">
-        </div>
-        <div class="carousel-item">
-          <img class="d-block w-100" src="images/costa-casino_1298x420.png" alt="Third slide">
-        </div>
+        <!-- End Wrapper for slides -->
+        
       </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- End slider -->
-
-    <!-- start title our services -->
-    <div class="col-md-12 font-weight-bold text-white mt-3 title">
-        <span>OUR SERVICES</span>
-    </div>
-    <!-- End title our services -->
-
-    <!-- Start Cruise Brand -->
-    <div class="container flex-w p-t-10 text-center p-b-20 m-t-15" style="background-color: #eee">
-      <!-- Block4 -->
-      <div class="block4 wrap-pic-w">
-        <img src="images/costa-logo.png" alt="IMG-INSTAGRAM">
-
-        <a href="ship-info.html" class="block4-overlay sizefull ab-t-l trans-0-4">
-
-          <div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-            <p class="r-lato-14 m-b-15 h-size1 of-hidden">
-              Costa cruise is lorem ipsum lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Block4 -->
-      <div class="block4 wrap-pic-w">
-        <img src="images/dream-logo-292x292.png" alt="IMG-INSTAGRAM">
-
-        <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-
-          <div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-            <p class="r-lato-14 m-b-15 h-size1 of-hidden deskripsi">
-              Dream cruise is lorem ipsum lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Block4 -->
-      <div class="block4 wrap-pic-w">
-        <img src="images/ncl-logo.png" alt="IMG-INSTAGRAM">
-
-        <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-
-          <div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-            <p class="r-lato-14 m-b-15 h-size1 of-hidden deskripsi">
-              NCL cruise is lorem ipsum lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-            </p>
-          </div>
-        </a>
-      </div>
-
-      <!-- Block4 -->
-      <div class="block4 wrap-pic-w">
-        <img src="images/logo-his.jpg" alt="IMG-INSTAGRAM">
-
-        <a href="#" class="block4-overlay sizefull ab-t-l trans-0-4">
-
-          <div class="block4-overlay-txt trans-0-4 p-l-40 p-r-25 p-b-30">
-            <p class="r-lato-14 m-b-15 h-size1 of-hidden deskripsi">
-              Nullam scelerisque, lacus sed consequat laoreet, dui enim iaculis leo, eu viverra ex nulla in tellus. Nullam nec ornare tellus, ac fringilla lacus. Ut sit amet enim orci. Nam eget metus elit.
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- End Cruise Brand -->
-
-    <!-- start about our company -->
-    <div class="col-md-12 font-weight-bold text-white mt-3 title">
-        <span>ABOUT US</span>
-    </div>
-    <!-- End about our company -->
-
-    <!-- Start Details Company -->
-    <section class="col-md-12 bgwhite my-padding-bottom p-t-10">
+    </section>
+    
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+    
+        <!--
+        Brands
+        ==================================== -->
+    
+    <section id="brands" class="brands">
       <div class="container">
         <div class="row">
-          <div class="img-company col-md-3 offset-md-1" data-aos="fade-right">
-            <img src="images/logo-his.jpg">
+        
+          <div class="sec-title text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+            <h2>Brands</h2>
+            <div class="devider"><i class="fab fa-bandcamp"></i></div>
           </div>
 
-          <div class="desc-company col-md-8 p-t-10 deskripsi text-justify"  data-aos="fade-left">
-            <span>His Travel Indonesia merupakan Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure do.</span>
+          <!-- service item -->
+          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+            <div class="service-item">              
+              <div class="service-desc">
+                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
+                <h3 style="text-align: center;">Genting Dream Cruise</h3>
+              </div>
+            </div>
+          </div>
+          <!-- end service item -->
+          
+          <!-- service item -->
+          <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+            <div class="service-item">              
+              <div class="service-desc">
+                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
+                <h3 style="text-align: center;">Norwegian Cruise Line</h3>
+              </div>
+            </div>
+          </div>
+          <!-- end service item -->
+          
+          <!-- service item -->
+          <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+            <div class="service-item">
+              <div class="service-desc">
+                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
+                <h3 style="text-align: center;">Costa Cruise</h3>
+              </div>
+            </div>
+          </div>
+          <!-- end service item -->
+            
+        </div>
+      </div>
+    </section>
+    
+        <!--
+        End Brands
+        ==================================== -->
+        <!-- 
+        About Naik Cruise
+        ==================================== -->
+    <section id="aboutNaikCruise">
+      <div class="container">
+        <div class="sec-title text-center">
+          <h2>About Naik Cruise</h2>
+          <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-3">
+            <img src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" style="width: 100%; height: 100%;">
+          </div>
+          <div class="col-md-7" style="margin-top: 5%">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+        </div>
+        
+      </div>
+    </section>
+        <!-- 
+        End About Naik Cruise
+        ==================================== -->
+
+        <!--
+        End Our Works
+        ==================================== -->
+    
+        <!--
+        Best Seller
+        ==================================== -->    
+    
+    <section id="bestSeller" class="bestSeller">
+      <div class="container">
+        <div class="row">
+    
+          <div class="sec-title text-center wow fadeInUp animated" data-wow-duration="700ms">
+            <h2>Best Seller</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+          </div>
+          
+          <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+
+          <!-- single member -->
+          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+            <div class="member-thumb">
+              <img src="img3/team/member-1.png" alt="Team Member" class="img-responsive">
+              <figcaption class="overlay">
+                <h5>Lorem Ipsum Product Name Just for Sampel</h5>
+                <p>sit aspernatur aut odit aut fugit,</p>
+                <ul class="social-links text-center">
+                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>John Filmr Doe</h4>
+            <span>Managing Director</span>
+          </figure>
+          <!-- end single member -->
+          
+          <!-- single member -->
+          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="member-thumb">
+              <img src="img3/team/member-2.png" alt="Team Member" class="img-responsive">
+              <figcaption class="overlay">
+                <h5>voluptatem quia voluptas </h5>
+                <p>sit aspernatur aut odit aut fugit,</p>
+                <ul class="social-links text-center">
+                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>Martin Matrone</h4>
+            <span>Lead Developer</span>
+          </figure>
+          <!-- end single member -->
+          
+          <!-- single member -->
+          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+            <div class="member-thumb">
+              <img src="img3/team/member-3.png" alt="Team Member" class="img-responsive">
+              <figcaption class="overlay">
+                <h5>voluptatem quia voluptas </h5>
+                <p>sit aspernatur aut odit aut fugit,</p>
+                <ul class="social-links text-center">
+                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>Steve Flaulkin</h4>
+            <span>Sr. UI Designer</span>
+          </figure>
+          <!-- end single member -->
+          
+          <!-- single member -->
+          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+            <div class="member-thumb">
+              <img src="img3/team/member-1.png" alt="Team Member" class="img-responsive">
+              <figcaption class="overlay">
+                <h5>voluptatem quia voluptas </h5>
+                <p>sit aspernatur aut odit aut fugit,</p>
+                <ul class="social-links text-center">
+                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
+                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
+                </ul>
+              </figcaption>
+            </div>
+            <h4>John Filmr Doe</h4>
+            <span>Managing Director</span>
+          </figure>
+          <!-- end single member -->
+          
+        </div>
+      </div>
+    </section>
+    
+        <!--
+        End Best Seller
+        ==================================== -->
+    
+        <!--
+        Our Works
+        ==================================== -->
+    
+    <section id="works" class="works clearfix">
+      <div class="container">
+        <div class="row">
+        
+          <div class="sec-title text-center">
+            <h2>Works</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+          </div>
+          
+          <div class="sec-sub-title text-center">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+          </div>
+          
+          <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+            <ul class="text-center">
+              <li><a href="javascript:;" data-filter="all" class="active filter">All</a></li>
+              <li><a href="javascript:;" data-filter=".branding" class="filter">Branding</a></li>
+              <li><a href="javascript:;" data-filter=".web" class="filter">web</a></li>
+              <li><a href="javascript:;" data-filter=".logo-design" class="filter">logo design</a></li>
+              <li><a href="javascript:;" data-filter=".photography" class="filter">photography</a></li>
+            </ul>
+          </div>
+          
+        </div>
+      </div>
+      
+      <div class="project-wrapper">
+      
+        <figure class="mix work-item branding">
+          <img src="img3/works/item-1.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-1.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item web">
+          <img src="img3/works/item-2.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-2.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item logo-design">
+          <img src="img3/works/item-3.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-3.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item photography">
+          <img src="img3/works/item-4.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-4.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+      
+        <figure class="mix work-item branding">
+          <img src="img3/works/item-5.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-5.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item web">
+          <img src="img3/works/item-6.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-6.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item logo-design">
+          <img src="img3/works/item-7.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-7.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+        <figure class="mix work-item photography">
+          <img src="img3/works/item-8.jpg" alt="">
+          <figcaption class="overlay">
+            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img3/works/item-8.jpg"><i class="fa fa-eye fa-lg"></i></a>
+            <h4>Labore et dolore magnam</h4>
+            <p>Photography</p>
+          </figcaption>
+        </figure>
+        
+      </div>
+    
+
+    </section>
+    
+    <!--
+        Some fun facts
+        ==================================== -->    
+    
+    <section id="facts" class="facts">
+      <div class="parallax-overlay">
+        <div class="container">
+          <div class="row number-counters">
+            
+            <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
+              <h2>Some Fun Facts</h2>
+              <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+            </div>
+            
+            <!-- first count item -->
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+              <div class="counters-item">
+                <i class="fa fa-clock-o fa-3x"></i>
+                <strong data-to="3200">0</strong>
+                <!-- Set Your Number here. i,e. data-to="56" -->
+                <p>Hours of Work</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
+              <div class="counters-item">
+                <i class="fa fa-users fa-3x"></i>
+                <strong data-to="120">0</strong>
+                <!-- Set Your Number here. i,e. data-to="56" -->
+                <p>Satisfied Clients</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
+              <div class="counters-item">
+                <i class="fa fa-rocket fa-3x"></i>
+                <strong data-to="360">0</strong>
+                <!-- Set Your Number here. i,e. data-to="56" -->
+                <p> Projects Delivered </p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
+              <div class="counters-item">
+                <i class="fa fa-trophy fa-3x"></i>
+                <strong data-to="6454">0</strong>
+                <!-- Set Your Number here. i,e. data-to="56" -->
+                <p>Awards Won</p>
+              </div>
+            </div>
+            <!-- end first count item -->
+        
           </div>
         </div>
       </div>
     </section>
-    <!-- End Details Company -->
-
-    <!-- start title Best Seller -->
-    <div class="col-md-12 font-weight-bold text-white mt-3 title">
-        <span>BEST SELLER</span>
-    </div>
-    <!-- End title Best Seller -->
-
-    <!-- Start best seller products -->
-      <section class="bgwhite my-padding-bottom p-t-10">
-        <div class="container">
-
-            <!-- Tab panes -->
-            <div class="tab-content p-t-10">
-              <!-- - -->
-              <div class="tab-pane fade show active" id="best-seller" role="tabpanel">
-                <div class="row">
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-50" data-aos="fade-right">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          7D6N JAPAN (YOKOHAMA) KOREA CRUISE<br>
-                          IDR 7.580.000
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-50" data-aos="zoom-in-up">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          5D/4N VOYAGER OF THE SEAS SINGAPORE MALAYSIA PHUKET <br>
-                          IDR 6.095.123
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-50" data-aos="fade-left">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          8D7N JAPAN (YOKOHAMA) KOREA CRUISE <br>
-                          IDR 7.580.000
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-10" data-aos="fade-right">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          8D7N JAPAN (FUKUOKA) RUSIA / KOREA CRUISE <br>
-                          IDR 7.580.000
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-10" data-aos="zoom-in-up">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          5D/4N VOYAGER OF THE SEAS SINGAPORE MALAYSIA PHUKET <br>
-                          IDR 6.095.000
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-sm-6 col-md-4 col-lg-4 p-b-10" data-aos="fade-left">
-                    <!-- Block2 -->
-                    <div class="block2">
-                      <div class="block2-img wrap-pic-w of-hidden pos-relative">
-                        <img src="images/logo-his_370x465.png" alt="IMG-PRODUCT">
-
-                        <!-- isi dari hover -->
-                        <div class="block2-overlay trans-0-4">
-                          <a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
-                          </a>
-
-                          <div class="block2-btn-addcart w-size-desc trans-0-4">
-                            <!-- Button -->
-                            <button class="flex-c-m size1 bg4 bo-rad-23 hov1 s-text1 trans-0-4">
-                              SELENGKAPNYA
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="block2-txt p-t-15">
-                        <a href="#" class="block2-name dis-block s-text3 p-b-5">
-                          5D4N JAPAN (YOKOHAMA) RUSIA / KOREA CRUISE<br>
-                          IDR 7.580.000
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+    
+        <!--
+        End Some fun facts
+        ==================================== -->
+    
+    
+    <!--
+        Contact Us
+        ==================================== -->    
+    
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="row mb50">
+        
+          <div class="sec-title text-center mb50 wow fadeInDown animated" data-wow-duration="500ms">
+            <h2>Let’s Discuss</h2>
+            <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+          </div>
+          
+          <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+          </div>
+          
+          <!-- contact address -->
+          <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 wow fadeInLeft animated" data-wow-duration="500ms">
+            <div class="contact-address">
+              <h3>Cras at ultrices erat, sed vulputate!</h3>
+              <p>2345 Setwant natrer, 1234,</p>
+              <p>Washington. United States.</p>
+              <p>(401) 1234 567</p>
             </div>
+          </div>
+          <!-- end contact address -->
+          
+          <!-- contact form -->
+          <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 wow fadeInDown animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="contact-form">
+              <h3>Say hello!</h3>
+              <form action="#" id="contact-form">
+                <div class="input-group name-email">
+                  <div class="input-field">
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-control">
+                  </div>
+                  <div class="input-field">
+                    <input type="email" name="email" id="email" placeholder="Email" class="form-control">
+                  </div>
+                </div>
+                <div class="input-group">
+                  <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
+                </div>
+                <div class="input-group">
+                  <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- end contact form -->
+          
+          <!-- footer social links -->
+          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-12 wow fadeInRight animated" data-wow-duration="500ms" data-wow-delay="600ms">
+            <ul class="footer-social">
+              <li><a href="https://www.behance.net/Themefisher"><i class="fa fa-behance fa-2x"></i></a></li>
+              <li><a href="https://www.twitter.com/Themefisher"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://dribbble.com/themefisher"><i class="fa fa-dribbble fa-2x"></i></a></li>
+              <li><a href="https://www.facebook.com/Themefisher"><i class="fa fa-facebook fa-2x"></i></a></li>
+            </ul>
+          </div>
+          <!-- end footer social links -->
+          
         </div>
-      </section>
-    <!-- End best seller products -->
-
-    <!-- start title our testimonials -->
-    <div class="col-md-12 font-weight-bold text-white mt-3 title">
-        <span>TESTIMONIALS</span>
-    </div>
-    <!-- End title our testimonials -->
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <!-- Additional Javascript -->
-    <!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-  <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/select2/select2.min.js"></script>
-  <script type="text/javascript">
-    $(".selection-1").select2({
-      minimumResultsForSearch: 20,
-      dropdownParent: $('#dropDownSelect1')
-    });
-  </script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/slick-custom.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/lightbox2/js/lightbox.min.js"></script>
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
-  <script type="text/javascript">
-    $('.block2-btn-addcart').each(function(){
-      var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-      $(this).on('click', function(){
-        swal(nameProduct, "", "success");
-      });
-    });
-
-    $('.block2-btn-addwishlist').each(function(){
-      var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
-      $(this).on('click', function(){
-        swal(nameProduct, "is added to wishlist !", "success");
-      });
-    });
-  </script>
-
-<!--===============================================================================================-->
-  <script type="text/javascript" src="vendor/parallax100/parallax100.js"></script>
-  <script type="text/javascript">
-        $('.parallax100').parallax100();
-  </script>
-<!--===============================================================================================-->
-  <script src="js/main.js"></script>
-    <!-- End additional javascript -->
-
-
-
-    <!-- js for aos -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
-  </body>
-</html>
+      </div>
+      
+      <!-- Google map -->
+      <div id="map_canvas" class="wow bounceInDown animated" data-wow-duration="500ms"></div>
+      <!-- End Google map -->
+      
+    </section>
+    
+        <!--
+        End Contact Us
+        ==================================== -->
+<?php $this->load->view("_partials/footer")?>

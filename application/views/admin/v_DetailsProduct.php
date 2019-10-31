@@ -3,8 +3,8 @@
 
 <div class="container" style="margin-top: 35px;">
   <div class="row">
-    <div style="margin:5px; margin-left: 25px"><a class="btn btn-primary" href="<?php echo site_url('admin/products/update/'.$product->id_product)?>" role="button">Update</a></div>
-    <div style="margin:5px"><a class="btn btn-danger" href="#!" onclick="deleteConfirm('<?php echo site_url('admin/products/deleteList/'.$product->id_product) ?>')">Delete</a></div>
+    <div style="margin:5px; margin-left: 25px; width:7%"><a class="btn btn-warning" href="<?php echo site_url('admin/products/update/'.$product->id_product)?>" role="button" style="width: 100%"><i class="fas fa-edit"></i></a></div>
+    <div style="margin:5px; width:7%"><a style="width:100%" class="btn btn-danger" href="#!" onclick="deleteConfirm('<?php echo site_url('admin/products/deleteList/'.$product->id_product) ?>')"><i class="fas fa-trash-alt"></i></a></div>
   </div>
 
 <!-- <a onclick="deleteConfirm('<?php echo site_url('admin/products/deleteList/'.$row->id_product) ?>')"href="#!" class="btn btn-danger">delete</a> -->
@@ -193,7 +193,7 @@
   <br>
 
   <div style="margin: 20px">
-    <a class="btn btn-primary" href="<?php echo site_url('admin/products/addItinerary/'.$product->id_product)?>" role="button">Add Itinerary</a>
+    <a class="btn btn-primary" href="<?php echo site_url('admin/products/addItinerary/'.$product->id_product)?>" role="button" style="width:8%"><i class="fas fa-plus-circle"></i></a>
   </div>
 
     <div class="card mb-3">

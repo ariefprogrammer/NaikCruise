@@ -6,11 +6,12 @@ class Home extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-
+		$this->load->model("MProductsFE");
 	}
 
 	public function index()
 	{
-		$this->load->view('v_home');
+		$data["bestSeller"] = $this->MProductsFE->bestSeller();
+		$this->load->view('v_home', $data);
 	}
 }

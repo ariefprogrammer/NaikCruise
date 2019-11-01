@@ -1,5 +1,6 @@
-<?php $this->load->view("_partials/header")?>    
-    
+<?php $this->load->view("_partials/header_home")?>
+  
+<!-- <?php var_dump($bestSeller)?> -->
         <!--
         Home Slider
         ==================================== -->
@@ -78,19 +79,25 @@
           <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
             <div class="service-item">              
               <div class="service-desc">
-                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
-                <h3 style="text-align: center;">Genting Dream Cruise</h3>
+                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
+                <h3 style="text-align: center;">Costa Cruise</h3>
+                <div style="text-align: center">
+                  <a href="<?php echo site_url('CostaCruise')?>"><button style="width: 90%; color: #000">Details</button></a>
+                </div>
               </div>
             </div>
           </div>
           <!-- end service item -->
           
           <!-- service item -->
-          <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
             <div class="service-item">              
               <div class="service-desc">
-                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
-                <h3 style="text-align: center;">Norwegian Cruise Line</h3>
+                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
+                <h3 style="text-align: center;">Genting Dream Cruise</h3>
+                <div style="text-align: center">
+                  <a href="https://www.google.com"><button style="width: 90%; color: #000">Details</button></a>
+                </div>
               </div>
             </div>
           </div>
@@ -117,7 +124,7 @@
         <!-- 
         About Naik Cruise
         ==================================== -->
-    <section id="aboutNaikCruise">
+    <section id="aboutNaikCruise" class="aboutNaikCruise">
       <div class="container">
         <div class="sec-title text-center">
           <h2>About Naik Cruise</h2>
@@ -155,84 +162,28 @@
           </div>
           
           <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p>We give you the best offers from our best seller products</p>
           </div>
-
+          <?php foreach($bestSeller as $best):?>
           <!-- single member -->
           <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
             <div class="member-thumb">
-              <img src="img3/team/member-1.png" alt="Team Member" class="img-responsive">
+              <img src="<?php echo $best->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
               <figcaption class="overlay">
-                <h5>Lorem Ipsum Product Name Just for Sampel</h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
+                <h5 style="text-align: left; margin-top: 40%;"><?php echo $best->product_transportation?></h5>
+                <h5 style="text-align: left"><?php echo $best->product_highlight_date?></h5>
+<!--                 <ul class="social-links text-center">
                   <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                   <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
                   <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
+                </ul> -->
               </figcaption>
             </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
+            <h4><?php echo $best->product_name?></h4>
+            <span><?php echo "IDR " .$best->product_starting_price?></span>
           </figure>
           <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-            <div class="member-thumb">
-              <img src="img3/team/member-2.png" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
-                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>Martin Matrone</h4>
-            <span>Lead Developer</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-            <div class="member-thumb">
-              <img src="img3/team/member-3.png" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
-                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>Steve Flaulkin</h4>
-            <span>Sr. UI Designer</span>
-          </figure>
-          <!-- end single member -->
-          
-          <!-- single member -->
-          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-            <div class="member-thumb">
-              <img src="img3/team/member-1.png" alt="Team Member" class="img-responsive">
-              <figcaption class="overlay">
-                <h5>voluptatem quia voluptas </h5>
-                <p>sit aspernatur aut odit aut fugit,</p>
-                <ul class="social-links text-center">
-                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-              </figcaption>
-            </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
-          </figure>
-          <!-- end single member -->
+        <?php endforeach;?>
           
         </div>
       </div>
@@ -245,7 +196,7 @@
         <!--
         Our Works
         ==================================== -->
-    
+ <!--    
     <section id="works" class="works clearfix">
       <div class="container">
         <div class="row">
@@ -350,64 +301,7 @@
     
 
     </section>
-    
-    <!--
-        Some fun facts
-        ==================================== -->    
-    
-    <section id="facts" class="facts">
-      <div class="parallax-overlay">
-        <div class="container">
-          <div class="row number-counters">
-            
-            <div class="sec-title text-center mb50 wow rubberBand animated" data-wow-duration="1000ms">
-              <h2>Some Fun Facts</h2>
-              <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-            </div>
-            
-            <!-- first count item -->
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-              <div class="counters-item">
-                <i class="fa fa-clock-o fa-3x"></i>
-                <strong data-to="3200">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Hours of Work</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="300ms">
-              <div class="counters-item">
-                <i class="fa fa-users fa-3x"></i>
-                <strong data-to="120">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Satisfied Clients</p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
-              <div class="counters-item">
-                <i class="fa fa-rocket fa-3x"></i>
-                <strong data-to="360">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p> Projects Delivered </p>
-              </div>
-            </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
-              <div class="counters-item">
-                <i class="fa fa-trophy fa-3x"></i>
-                <strong data-to="6454">0</strong>
-                <!-- Set Your Number here. i,e. data-to="56" -->
-                <p>Awards Won</p>
-              </div>
-            </div>
-            <!-- end first count item -->
-        
-          </div>
-        </div>
-      </div>
-    </section>
-    
-        <!--
-        End Some fun facts
-        ==================================== -->
+  -->   
     
     
     <!--

@@ -54,12 +54,12 @@
     
     <!-- Start navbar  -->
     <div class="my-navbar">
-        <ul class="my-ul">
-          <li class="my-li"><a class="active" href="<?php echo site_url('home')?>">Home</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#brands')?>">Brands</a></li>
-          <li class="my-li"><a href="<?php echo site_url('')?>">Products</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#contact')?>">Contact</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#aboutNaikCruise')?>">About</a></li>
-        </ul>
+<ul class="my-ul">
+  <li class="my-li"><a class="active" href="#body">Home</a></li>
+  <li class="my-li"><a href="#brands">Brands</a></li>
+  <li class="my-li"><a href="<?php echo site_url('')?>">Products</a></li>
+  <li class="my-li"><a href="#contact">Contact</a></li>
+  <li class="my-li"><a href="#aboutNaikCruise">About</a></li>
+</ul>
     </div>
     <!-- End Navbar -->

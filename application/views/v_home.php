@@ -76,7 +76,7 @@
           </div>
 
           <!-- service item -->
-          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
                 <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
@@ -90,7 +90,7 @@
           <!-- end service item -->
           
           <!-- service item -->
-          <div class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
+          <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
                 <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
@@ -104,11 +104,14 @@
           <!-- end service item -->
           
           <!-- service item -->
-          <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms"  data-wow-delay="900ms">
+          <div class="col-md-4 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">
               <div class="service-desc">
                 <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
                 <h3 style="text-align: center;">Costa Cruise</h3>
+                <div style="text-align: center">
+                  <a href="https://www.google.com"><button style="width: 90%; color: #000">Details</button></a>
+                </div>
               </div>
             </div>
           </div>
@@ -126,16 +129,16 @@
         ==================================== -->
     <section id="aboutNaikCruise" class="aboutNaikCruise">
       <div class="container">
-        <div class="sec-title text-center">
+        <div class="sec-title text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
           <h2>About Naik Cruise</h2>
           <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
         </div>
         <div class="row">
           <div class="col-md-1"></div>
-          <div class="col-md-3">
+          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
             <img src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" style="width: 100%; height: 100%;">
           </div>
-          <div class="col-md-7" style="margin-top: 5%">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          <div class="col-md-7 wow fadeInRight" style="margin-top: 5%" data-wow-duration="500ms" data-wow-delay="700ms">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div>
         
       </div>

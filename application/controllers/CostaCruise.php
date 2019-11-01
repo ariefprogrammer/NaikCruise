@@ -9,12 +9,13 @@ class CostaCruise extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-
+		$this->load->model("MCostaCruise");
 	}
 
 	public function index()
 	{
-		$this->load->view("v_costaCruise");
+		$data["allCosta"] = $this->MCostaCruise->getAll();
+		$this->load->view("v_costaCruise", $data);
 	}
 }
 

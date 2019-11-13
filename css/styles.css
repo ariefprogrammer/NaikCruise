@@ -59,3 +59,31 @@ font-style: italic;
 	padding: 20px 50px 50px 50px;
 	border-radius: 3px;
 }
+
+.w3-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 25%;
+}
+
+.w3-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.w3-container {
+  padding: 2px 16px;
+}
+
+.bg-navy-blue{
+	background-color: #FFFFFF;
+	color: black;
+}
+
+.bg-navy-blue:hover{
+	background-color: #0D47A1;
+	color: black;
+}
+
+.bg-amber{
+	background-color: #FF9B20;
+}

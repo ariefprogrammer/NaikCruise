@@ -24,23 +24,25 @@
     <!-- CSS
     ================================================== -->
     <!-- Fontawesome Icon font -->
-        <link rel="stylesheet" href="css3/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/font-awesome.min.css')?>">
     <!-- Twitter Bootstrap css -->
-        <link rel="stylesheet" href="css3/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/bootstrap.min.css')?>">
     <!-- jquery.fancybox  -->
-        <link rel="stylesheet" href="css3/jquery.fancybox.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/jquery.fancybox.css')?>">
     <!-- animate -->
-        <link rel="stylesheet" href="css3/animate.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/animate.css')?>">
     <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css3/main.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/main.css')?>">
     <!-- media-queries -->
-        <link rel="stylesheet" href="css3/media-queries.css">
+        <link rel="stylesheet" href="<?php echo base_url('css3/media-queries.css')?>">
+
+        <link rel="stylesheet" href="<?php echo base_url('css/styles.css')?>">
 
 
         <!-- Bootstrap css -->
 
     <!-- Modernizer Script for old Browsers -->
-        <script src="js3/modernizr-2.6.2.min.js"></script>
+        <script src="<?php echo base_url('js3/modernizr-2.6.2.min.js')?>"></script>
 
     </head>
   
@@ -55,11 +57,11 @@
     <!-- Start navbar  -->
     <div class="my-navbar">
         <ul class="my-ul">
-          <li class="my-li"><a class="active" href="<?php echo site_url('home')?>">Home</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#brands')?>">Brands</a></li>
-          <li class="my-li"><a href="<?php echo site_url('')?>">Products</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#contact')?>">Contact</a></li>
-          <li class="my-li"><a href="<?php echo site_url('home#aboutNaikCruise')?>">About</a></li>
+          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" href="<?php echo site_url('')?>">Home</a></li>
+          <!-- <li class="my-li"><a href="<?php echo site_url('home#brands')?>">Brands</a></li> -->
+          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>" href="<?php echo site_url('products')?>">Products</a></li>
+          <li class="my-li"><a href="<?php echo site_url('')?>">Contact</a></li>
+          <li class="my-li"><a href="<?php echo site_url('')?>">About</a></li>
         </ul>
     </div>
     <!-- End Navbar -->

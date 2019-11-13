@@ -76,7 +76,16 @@ body > section,
 .sec-title {}
 
 .sec-title h2 {
-  color: #0eb493;
+  color: white;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.sec-title-dark {}
+
+.sec-title-dark h2 {
+  color: #333;
   font-size: 28px;
   font-weight: 800;
   text-transform: uppercase;
@@ -90,7 +99,7 @@ body > section,
 	font-weight: 600;
 	line-height: 24px;
 	font-size: 18px;
-	color: #5b646e;
+	color: white;
 }
 
 .devider {
@@ -114,6 +123,30 @@ body > section,
 }
 
 .devider:after {
+  left: 10px;
+}
+
+.devider-dark {
+  margin-top: 30px;
+}
+
+.devider-dark i {
+  color: #cccccc;
+}
+
+.devider-dark:before,
+.devider-dark:after {
+  content: "______________________";
+  color: #0D47A1;
+  position: relative;
+  bottom: 6px;
+}
+
+.devider-dark:before {
+  right: 10px;
+}
+
+.devider-dark:after {
   left: 10px;
 }
 
@@ -221,7 +254,7 @@ body > section,
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: #0D47A1;
 }
 
 .list-ship-info{
@@ -381,7 +414,7 @@ top: -8px;
 
 
 .aboutNaikCruise{
-  background-color: #062033;
+  background-color: #0D47A1;
 }
 
 
@@ -483,13 +516,13 @@ top: -8px;
 .work-item .overlay h4 {
   font-size: 18px;
   font-weight: 700;
-  line-height: 24px;
+  line-height: 10px;
   margin: 25px 0 8px;
 }
 
 .work-item .overlay p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 10px;
 }
 
 
@@ -619,17 +652,18 @@ top: -8px;
 
 .contact {
 	padding-bottom: 0;
-  background-color: #062033;
+  background-color: #0D47A1;
 }
 
 .contact-address h3 {
-  color: #fff;
+  color: white;
   font-size: 22px;
   line-height: 32px;
   margin-bottom: 25px;
 }
 
 .contact-address p {
+  color: white;
   line-height: 24px;
 }
 
@@ -708,9 +742,9 @@ label.error {
 	Contact Us
 ==========================================*/
 
-
+/*1ea78d*/
 .footer {
-  background-color: #1ea78d;
+  background-color: #333;
   border-top: 5px solid #062033;
   color: #fff;
 }

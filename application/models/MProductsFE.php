@@ -11,6 +11,12 @@ class MProductsFE extends CI_Model
 		$sql = $this->db->query("SELECT * FROM tb_products WHERE product_status = 'publish' LIMIT 9");
 		return $sql->result();
 	}
+
+	public function getAll()
+	{
+		$sql = $this->db->query("SELECT *FROM tb_products");
+		return $sql->result();
+	}
 }
 
 

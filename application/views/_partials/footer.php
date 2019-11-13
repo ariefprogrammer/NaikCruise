@@ -50,7 +50,7 @@
         <div class="row">
           <div class="col-md-12">
             <p class="copyright text-center">
-              Copyright © 2015 <a href="http://themefisher.com/">Themefisher</a>. All rights reserved. Designed & developed by <a href="http://themefisher.com/">Themefisher</a>
+              Copyright © 2019 <a href="https://www.his-travel.co.id/">HIS Travel Indonesia</a>.
             </p>
           </div>
         </div>

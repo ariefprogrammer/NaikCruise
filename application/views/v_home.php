@@ -21,7 +21,7 @@
           <!-- single slide -->
           <div class="item active" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated">Naik<span> Cruise</span>!</h2>
+              <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Naik Cruise</span>!</h2>
               <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span class="color">/let's</span> sailing with us.</h3>
               <p data-wow-duration="1000ms" class="wow slideInRight animated">Get the best offers</p>
               
@@ -38,9 +38,9 @@
           <!-- single slide -->
           <div class="item" style="background-image: url(img3/banner.jpg);">
             <div class="carousel-caption">
-              <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">Meet<span> Team</span>!</h2>
-              <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span class="color">/creative</span> one page template.</h3>
-              <p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals</p>
+              <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated"><span>Contact us</span>!</h2>
+              <h3 data-wow-duration="500ms" class="wow slideInLeft animated">Ask <span class="color">/Everything</span> to Customer Service.</h3>
+              <p data-wow-duration="500ms" class="wow slideInRight animated">Hope you get the best service</p>
               
               <ul class="social-links text-center">
                 <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
@@ -79,10 +79,10 @@
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center;">Costa Cruise</h3>
+                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/costa.png')?>" class="rounded mx-auto d-block" alt="test"></a>
+                <h3 style="text-align: center; margin-top: 15%;">Costa Cruise</h3>
                 <div style="text-align: center">
-                  <a href="<?php echo site_url('CostaCruise')?>"><button style="width: 90%; color: #000;"><b>Details</b></button></a>
+                  <a href="<?php echo site_url('CostaCruise')?>"><button class="btn btn-all btn-block"><b>Details</b></button></a>
                 </div>
               </div>
             </div>
@@ -93,10 +93,10 @@
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center;">Norwegian Cruise Line</h3>
+                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test"></a>
+                <h3 style="text-align: center; margin-top: 15%;">Norwegian Cruise Line</h3>
                 <div style="text-align: center">
-                  <a href="<?php echo site_url('CostaCruise')?>"><button style="width: 90%; color: #000"><b>Details</b></button></a>
+                  <a href="<?php echo site_url('CostaCruise')?>"><button class="btn btn-all btn-block"><b>Details</b></button></a>
                 </div>
               </div>
             </div>
@@ -107,10 +107,10 @@
           <div class="col-md-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center;">Genting Dream Cruise</h3>
+                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test"></a>
+                <h3 style="text-align: center; margin-top: 15%;">Dream Cruise</h3>
                 <div style="text-align: center">
-                  <a href="https://www.google.com"><button style="width: 90%; color: #000"><b>Details</b></button></a>
+                  <a href="https://www.google.com"><button class="btn btn-all btn-block"><b>Details</b></button></a>
                 </div>
               </div>
             </div>
@@ -121,10 +121,10 @@
           <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">
               <div class="service-desc">
-                <img style="width:100%; height:100%;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" class="rounded mx-auto d-block" alt="test">
-                <h3 style="text-align: center;">Costa Cruise</h3>
+                <img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test">
+                <h3 style="text-align: center; margin-top: 15%;">Costa Cruise</h3>
                 <div style="text-align: center">
-                  <a href="https://www.google.com"><button style="width: 90%; color: #000"><b>Details</b></button></a>
+                  <a href="https://www.google.com"><button class="btn btn-all btn-block"><b>Details</b></button></a>
                 </div>
               </div>
             </div>
@@ -150,7 +150,7 @@
         <div class="row">
           <div class="col-md-1"></div>
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-            <img src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662" style="width: 100%; height: 100%;">
+            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
           </div>
           <div class="col-md-7 wow fadeInRight" style="margin-top: 5%; color: white;" data-wow-duration="500ms" data-wow-delay="700ms">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div>
@@ -191,7 +191,7 @@
                   <h5 style="text-align: left; margin-top: 40%;"><?php echo $best->product_transportation?></h5>
                   <h5 style="text-align: left"><?php echo $best->product_highlight_date?></h5>
                   <p style="text-align: left"><?php echo "IDR " .$best->product_starting_price?></p>
-                  <button class="btn bg-navy-blue btn-block" style="margin-top: 7%"><b>Details</b></button>
+                  <button class="btn btn-all btn-block" style="margin-top: 7%"><b>Details</b></button>
 <!--                  <ul class="social-links text-center">
                     <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                     <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>

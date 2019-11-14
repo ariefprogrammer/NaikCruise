@@ -6,8 +6,8 @@
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms">
             <div class="footer-single">
-              <img src="img3/footer-logo.png" alt="">
-              <p>eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <img src="<?php echo base_url('img3/footer-logo.png')?>" alt="">
+              <p>Let's sailing with Naik Cruise and nikmati kemewahan kapal-kapal pesiar terbaik.</p>
             </div>
           </div>
         
@@ -24,24 +24,27 @@
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="600ms">
             <div class="footer-single">
-              <h6>Explore</h6>
+              <h6>Branches</h6>
               <ul>
-                <li><a href="#">Inside Us</a></li>
-                <li><a href="#">Flickr</a></li>
-                <li><a href="#">Google</a></li>
-                <li><a href="#">Forum</a></li>
+                <li><a href="#">Jabodetabek</a></li>
+                <li><a href="#">Bandung</a></li>
+                <li><a href="#">Yogyakarta</a></li>
+                <li><a href="#">Surabaya</a></li>
+                <li><a href="#">Bali</a></li>
+                <li><a href="#">Cikarang</a></li>
+                <li><a href="#">Karawang</a></li>
               </ul>
             </div>
           </div>
         
           <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms" data-wow-delay="900ms">
             <div class="footer-single">
-              <h6>Support</h6>
+              <h6>About NaikCruise</h6>
               <ul>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Market Blog</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Pressroom</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Terms and Condition</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Galery</a></li>
               </ul>
             </div>
           </div>

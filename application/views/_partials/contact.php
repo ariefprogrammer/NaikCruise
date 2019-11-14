@@ -13,7 +13,7 @@
           </div>
           
           <div class="sec-sub-title text-center wow rubberBand animated" data-wow-duration="1000ms">
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore</p>
+            <p>We already to help you in everything</p>
           </div>
           
           <!-- contact address -->

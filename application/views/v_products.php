@@ -22,7 +22,7 @@
 	                <h5 style="text-align: left; margin-top: 40%;"><?php echo $all->product_transportation?></h5>
 	                <h5 style="text-align: left"><?php echo $all->product_highlight_date?></h5>
 	                <p style="text-align: left"><?php echo "IDR " .$all->product_starting_price?></p>
-	                <button class="btn bg-navy-blue btn-block" style="margin-top: 7%;"><b>Details</b></button>
+	                <button class="btn btn-all btn-block" style="margin-top: 7%;"><b>Details</b></button>
 <!-- 	                <ul class="social-links text-center">
 	                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
 	                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>

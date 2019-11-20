@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login - Inventory Clinic</title>
+    <title>Login - NaikCruise</title>
     <!-- Custom fonts for this template-->
   <link href="<?php echo base_url('assets/fontawesome-free/css/all.min.css')?>" rel="stylesheet" type="text/css">
 
@@ -16,7 +16,7 @@
 <body>
     <form method="post" class="form-horizontal formm">
         <div>
-            <h3 class="text-center">Sign In</h3>
+            <h3 class="text-center" style="padding-top: 5%">Sign In</h3>
             <br>
         </div>
         <div class="text-danger form-group">
@@ -28,21 +28,19 @@
         }
         ?>
         </div>
-        <div class="form-group">
+        <div class="form-group" style="padding-left: 15%; padding-right: 15%">
         <input class="form-control" type="text" name="username" placeholder="email"/>
         </div>
 
-        <div class="form-group">
+        <div class="form-group" style="padding-left: 15%; padding-right: 15%">
             <input class="form-control" type="password" name="password" placeholder="password" />
         </div>
 
-        <div class="form-group text-center">
+        <div class="form-group text-center" style="padding-left: 15%; padding-right: 15%">
             <input class="btn btn-primary form-control" type="submit" name="login" value="login"/ >
         </div>
-        
-
-        
     </form>
+    
 </body>
 </html>
 

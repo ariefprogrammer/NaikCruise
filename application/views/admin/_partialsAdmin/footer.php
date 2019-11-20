@@ -62,6 +62,7 @@
   <script type="text/javascript" src="<?php echo base_url('ckeditor/ckeditor.js')?>"></script>
 
   <script src="<?php echo base_url('assets/jquery/jquery.min.js')?>"></script>
+  <script src="<?php echo base_url('assets/jquery/myJquery.js')?>"></script>
   <script src="<?php echo base_url('assets/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 
   <!-- Core plugin JavaScript-->
@@ -84,6 +85,36 @@
     $('#btn-delete').attr('href', url);
     $('#deleteModal').modal();
   }
+  </script>
+
+  <script type="text/javascript">
+
+    function mainFunction() {
+      var x = document.getElementById("mainSection");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function itinerariesFunction() {
+      var x = document.getElementById("itinerariesSection");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+
+    function imageSlidersFunction() {
+      var x = document.getElementById("imageSlidersSection");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    } 
   </script>
 
 </body>

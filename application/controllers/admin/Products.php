@@ -62,6 +62,7 @@ class Products extends CI_Controller
 		if ($this->session->userdata('isloggedin')) {
 			$data["product"] = $this->MProducts->getById($id);
 			$data["lihatItinerary"] = $this->MProducts->lihatItinerary($id);
+			$data["lihatImageSlider"] =$this->MProducts->lihatImageSlider();
 			$this->load->view("admin/v_DetailsProduct", $data);
 		}else{
 			redirect("admin/user/login");
@@ -126,6 +127,39 @@ class Products extends CI_Controller
 		if ($this->MProducts->deleteItinerary($id_itinerary)) {
 			redirect("admin/products/lihat/".$id_product);
 		}
+	}
+
+	public function addImageSlider()
+	{
+		if (isset($_POST['submit_imageSliderProduct'])) {
+			$last_id = $this->input->post("id_product");
+			$this->MProducts->addImageSlider($_POST);
+			redirect("admin/products/lihat/".$last_id);
+		}
+		$this->load->view("admin/v_AddImageSlider");
+	}
+
+	public function lihatImageSlider()
+	{
+		if (isset($_POST[''])) {
+			# code...
+		}
+	}
+
+	public function updateImageSlider($id_imageSlider, $id_product)
+	{
+		if (isset($_POST['update_imageSliderProduct'])) {
+			$this->MProducts->updateImageSlider($_POST, $id_imageSlider);
+			redirect("admin/products/lihat/".$id_product);
+		}
+		$data["dataStatus"] = $this->MProducts->getStatusImage();
+		$data["updateImageSliderProduct"] = $this->MProducts->getImageById($id_imageSlider);
+		$this->load->view("admin/v_UpdateImageSliderProduct", $data);
+	}
+
+	public function deleteImageSlider()
+	{
+		//
 	}
 }
 

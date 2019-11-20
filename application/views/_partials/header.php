@@ -58,10 +58,14 @@
     <div class="my-navbar">
         <ul class="my-ul">
           <li class="my-li"><a class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" href="<?php echo site_url('')?>">Home</a></li>
-          <!-- <li class="my-li"><a href="<?php echo site_url('home#brands')?>">Brands</a></li> -->
-          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>" href="<?php echo site_url('products')?>">Products</a></li>
+          <li class="my-li"><a href="#">Plans</a></li>
+          <li class="my-li"><a class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>" href="<?php echo site_url('products')?>">Package</a></li>
+          <li class="my-li"><a href="#">How to?</a></li>
+
+          
           <li class="my-li"><a href="#">Contact</a></li>
           <li class="my-li"><a href="#">About</a></li>
+          <li class="my-li"><a href="#">FAQ</a></li>
         </ul>
     </div>
     <!-- End Navbar -->

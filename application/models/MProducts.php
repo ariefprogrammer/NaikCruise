@@ -146,5 +146,57 @@ class MProducts extends CI_Model
 		return $this->db->delete("tb_itinerary", array("id_itinerary" =>$id_itinerary));
 	}
 
+	public function addImageSlider($post)
+	{
+		$id_product = $this->db->escape($post["id_product"]);
+		$title_image_slider_product = $this->db->escape($post["title_image_slider_product"]);
+		$image_image_slider_product = $this->db->escape($post["image_image_slider_product"]);
+		$position_order_image_slider_product = $this->db->escape($post["position_order_image_slider_product"]);
+		$id_status = $this->db->escape($post["id_status"]);
+
+		$sql = $this->db->query("INSERT INTO tb_image_slider_product VALUES (NULL, $id_product, $title_image_slider_product, $image_image_slider_product, $position_order_image_slider_product, $id_status) ");
+
+		if ($sql) {
+			return true;
+		}else
+		{
+			return false;
+		}
+	}
+
+	public function updateImageSlider($post, $id_imageSlider )
+	{
+		// $id_product = $this->db->escape($post["id_product"]);
+		$title_image_slider_product = $this->db->escape($post["title_image_slider_product"]);
+		$image_image_slider_product = $this->db->escape($post["image_image_slider_product"]);
+		$position_order_image_slider_product = $this->db->escape($post["position_order_image_slider_product"]);
+		$id_status = $this->db->escape($post["id_status"]);
+
+		$sql = $this->db->query("UPDATE tb_image_slider_product SET title_image_slider_product = $title_image_slider_product, image_image_slider_product = $image_image_slider_product, position_order_image_slider_product = $position_order_image_slider_product, id_status = $id_status WHERE id_image_slider_product = ".intval($id_imageSlider));
+
+		return true;
+	}
+
+
+	public function deleteImageSlider($id_imageSlider)
+	{
+		//
+	}
+
+	public function lihatImageSlider()
+	{
+		return $this->db->get("tb_image_slider_product")->result();
+	}
+
+	public function getImageById($id_imageSlider)
+	{
+		return $this->db->get_where("tb_image_slider_product", ["id_image_slider_product" => $id_imageSlider])->row();
+	}
+
+	public function getStatusImage()
+	{
+		return $this->db->get("tb_status")->result();
+	}
+
 }
 ?>

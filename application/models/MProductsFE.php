@@ -8,7 +8,7 @@ class MProductsFE extends CI_Model
 	
 	public function bestSeller()
 	{
-		$sql = $this->db->query("SELECT * FROM tb_products WHERE product_status = 'publish' LIMIT 9");
+		$sql = $this->db->query("SELECT * FROM tb_products WHERE id_status = 2 LIMIT 9");
 		return $sql->result();
 	}
 

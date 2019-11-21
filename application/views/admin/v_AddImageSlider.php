@@ -27,8 +27,8 @@
 		<div class="form-group">
 			<label>Is Active</label>
 			<select class="form-control" name="id_status">
-		      <option value="1">ya</option>
-		      <option value="2">tidak</option>
+		      <option value="1">draft</option>
+		      <option value="2">publish</option>
 		    </select>
 		</div>
 

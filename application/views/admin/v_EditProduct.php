@@ -97,9 +97,9 @@
 
 		<div class="form-group">
 			<label>Status</label>
-			<select class="form-control" name="product_status">
-		      <option value="Draft" <?php if($edit->product_status == "draft") echo "selected"?>>Draft</option>
-		      <option value="Publish" <?php if($edit->product_status == "publish") echo "selected"?>>Publish</option>
+			<select class="form-control" name="id_status">
+		      <option value="1" <?php if($edit->id_status == "1") echo "selected"?>>Draft</option>
+		      <option value="2" <?php if($edit->id_status == "2") echo "selected"?>>Publish</option>
 		    </select>
 		</div>
 

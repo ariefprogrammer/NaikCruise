@@ -33,7 +33,7 @@
                     <!-- <td><?php echo $row->product_starting_price?></td> -->
                     <td><?php echo $row->product_transportation?></td>
                     <!-- <td><?php echo $row->product_maximum_child_age?></td> -->
-                    <td><?php echo $row->product_status?></td>
+                    <td><?php echo $row->id_status?></td>
                     <td width="150" class="text-center">
                       <a href="<?php echo site_url('admin/products/lihat/'.$row->id_product)?>"
                        class="btn btn-small"><i class="fas fa-eye"></i></a>

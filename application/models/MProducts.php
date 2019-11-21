@@ -28,9 +28,9 @@ class MProducts extends CI_Model
 		$product_terms = $this->db->escape($post["product_terms"]);
 		$product_thumbnail = $this->db->escape($post["product_thumbnail"]);
 		$product_flyer = $this->db->escape($post["product_flyer"]);
-		$product_status = $this->db->escape($post["product_status"]);
+		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $product_transportation, $product_accomodation, product_included, $product_excluded, $product_terms, $product_thumbnail, product_flyer, $product_status)");
+		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $product_transportation, $product_accomodation, product_included, $product_excluded, $product_terms, $product_thumbnail, product_flyer, $id_status)");
 
 		if($sql){
 			return true;
@@ -46,14 +46,14 @@ class MProducts extends CI_Model
 
 	public function published()
 	{
-		$sql = $this->db->query("SELECT * FROM tb_products WHERE product_status='publish'");
+		$sql = $this->db->query("SELECT * FROM tb_products WHERE id_status= 2");
 		return $sql->result();
 	}
 
 
 	public function draft()
 	{
-		$sql = $this->db->query("SELECT * FROM tb_products WHERE product_status='draft'");
+		$sql = $this->db->query("SELECT * FROM tb_products WHERE id_status= 1");
 		return $sql->result();
 	}
 
@@ -88,9 +88,9 @@ class MProducts extends CI_Model
 		$product_terms = $this->db->escape($post["product_terms"]);
 		$product_thumbnail = $this->db->escape($post["product_thumbnail"]);
 		$product_flyer = $this->db->escape($post["product_flyer"]);
-		$product_status = $this->db->escape($post["product_status"]);
+		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, product_transportation = $product_transportation, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = $product_thumbnail, product_flyer = $product_flyer, product_status = $product_status WHERE id_product= ".intval($id));
+		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, product_transportation = $product_transportation, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = $product_thumbnail, product_flyer = $product_flyer, id_status = $id_status WHERE id_product= ".intval($id));
 
 		return true;
 	}

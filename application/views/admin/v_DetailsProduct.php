@@ -188,7 +188,7 @@
         Status
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_status?>
+        <?php echo ":    " .$product->id_status?>
       </div>
     </div>
     <hr>

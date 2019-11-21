@@ -111,9 +111,9 @@
 
 		<div class="form-group">
 			<label>Status</label>
-			<select class="form-control" name="product_status">
-		      <option>Draft</option>
-		      <option>Publish</option>
+			<select class="form-control" name="id_status">
+		      <option value="1">Draft</option>
+		      <option value="2">Publish</option>
 		    </select>
 		</div>
 

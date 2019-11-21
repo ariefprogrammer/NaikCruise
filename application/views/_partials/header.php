@@ -55,7 +55,7 @@
     <!-- end preloader -->
     
     <!-- Start navbar  -->
-    <div class="my-navbar">
+    <!-- <div class="my-navbar">
         <ul class="my-ul">
           <li class="my-li"><a class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" href="<?php echo site_url('')?>">Home</a></li>
           <li class="my-li"><a href="#">Plans</a></li>
@@ -67,5 +67,31 @@
           <li class="my-li"><a href="#">About</a></li>
           <li class="my-li"><a href="#">FAQ</a></li>
         </ul>
+    </div> -->
+
+    <div class="w3-navbar">
+      <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" >Home</a>
+      <div class="w3-dropdown ">
+        <button class="w3-dropbtn">Plans 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content">
+          <a href="#">Our ships</a>
+          <a href="#">Destination</a>
+        </div>
+      </div>
+      <a href="<?php echo site_url('products')?>" class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>">Products</a>
+      <div class="w3-dropdown">
+        <button class="w3-dropbtn">How to? 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="w3-dropdown-content">
+          <a href="#">Get a ticket</a>
+          <a href="#">Boarding Day</a>
+        </div>
+      </div>
+      <a href="#">Contact Us</a>
+      <a href="#">About</a>
+      <a href="#">FAQ</a>
     </div>
     <!-- End Navbar -->

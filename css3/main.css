@@ -84,6 +84,69 @@ body > section,
 	padding: 70px 0;
 }
 
+/*Start menu*/
+.w3-navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.w3-navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.w3-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.w3-dropdown .w3-dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.w3-navbar a:hover, .w3-dropdown:hover .w3-dropbtn {
+  background-color: #0D47A1;
+}
+
+.w3-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.w3-dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.w3-dropdown-content a:hover {
+  background-color: #0D47A1;
+}
+
+.w3-dropdown:hover .w3-dropdown-content {
+  display: block;
+}
+/*End menu*/
+
+
 .sec-title {}
 
 .sec-title h2 {

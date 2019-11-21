@@ -137,4 +137,20 @@
           <a class="dropdown-item" href="#">Draft</a> -->
         </div>
       </li>
+
+      <li class="nav-item dropdown <?php echo $this->uri->segment(2) == 'blogs' ? 'active': '' ?>">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Blogs</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <!-- <h6 class="dropdown-header">Products</h6> -->
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs/add')?>">Add new</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs')?>">All Blogs</a>
+          <a class="dropdown-item" href="<?php echo site_url('admin/blogs')?>">FAQ</a>
+          <!-- <a class="dropdown-item" href="#">Published</a>
+          <a class="dropdown-item" href="#">Draft</a> -->
+        </div>
+      </li>
+
     </ul>

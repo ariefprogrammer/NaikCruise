@@ -291,7 +291,7 @@
                    class="btn btn-small"><i class="fas fa-eye"></i></a> -->
                   <a href="<?php echo site_url('admin/products/updateImageSlider/'.$row->id_image_slider_product.'/'.$this->uri->segment(4))?>"
                    class="btn btn-small"><i class="fas fa-edit"></i></a>
-                  <a onclick="deleteConfirm('<?php echo site_url('admin/products/deleteItinerary/'.$row->id_image_slider_product).'/'.$this->uri->segment(4) ?>')"href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
+                  <a onclick="deleteConfirm('<?php echo site_url('admin/products/deleteImageSlider/'.$row->id_image_slider_product).'/'.$this->uri->segment(4) ?>')"href="#!" class="btn btn-small text-danger"><i class="fas fa-trash"></i></a>
                 </td>
               </tr>
               <?php endforeach;?>

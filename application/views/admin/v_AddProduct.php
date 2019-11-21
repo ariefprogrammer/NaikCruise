@@ -68,7 +68,7 @@
 
 		<div class="form-group">
 			<label>Price Info</label>
-			<textarea class="ckeditor" id="ckedtor" name="product_price_info"></textarea>
+			<textarea class="ckeditor" id="ckeditor" name="product_price_info"></textarea>
 		</div>
 
 		<div class="form-group">

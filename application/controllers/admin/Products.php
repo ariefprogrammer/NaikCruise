@@ -139,13 +139,6 @@ class Products extends CI_Controller
 		$this->load->view("admin/v_AddImageSlider");
 	}
 
-	public function lihatImageSlider()
-	{
-		if (isset($_POST[''])) {
-			# code...
-		}
-	}
-
 	public function updateImageSlider($id_imageSlider, $id_product)
 	{
 		if (isset($_POST['update_imageSliderProduct'])) {
@@ -157,9 +150,26 @@ class Products extends CI_Controller
 		$this->load->view("admin/v_UpdateImageSliderProduct", $data);
 	}
 
-	public function deleteImageSlider()
+	public function deleteImageSlider($id_imageSlider, $id_product)
 	{
-		//
+		if ($this->MProducts->deleteImageSlider($id_imageSlider)) {
+			redirect("admin/products/lihat/".$id_product);
+		}
+	}
+
+	public function uploadPriceInfo()
+	{
+		$config['upload_path'] = './assets/uploads';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size'] = 1024;
+		$config['encrypt_name'] = TRUE;
+		$this->load->library('upload', $config);
+		if (!$this->upload->do_upload('upload')) {
+			echo json_encode(array('error' => $this->upload->display_errors()));
+		}else{
+			$upload_data = $this->upload->data();
+			echo json_encode(array('file_name' => $upload_data['file_name']));
+		}
 	}
 }
 

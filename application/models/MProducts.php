@@ -180,7 +180,7 @@ class MProducts extends CI_Model
 
 	public function deleteImageSlider($id_imageSlider)
 	{
-		//
+		return $this->db->delete("tb_image_slider_product", array("id_image_slider_product"=>$id_imageSlider));
 	}
 
 	public function lihatImageSlider()

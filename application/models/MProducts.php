@@ -102,8 +102,8 @@ class MProducts extends CI_Model
 
 	private function _uploadThumbnail()
 	{
-		$config['upload_path'] = './upload/thumbnail/';
-		$config['allowed_types'] = 'gif|jpg|png';
+		$config['upload_path'] = './img3/thumbnail/';
+		$config['allowed_types'] = 'gif|jpg|jpeg|png';
 		$config['file_name'] = uniqid();
 		$config['overwrite'] = true;
 		$config['max_size'] = 5000;
@@ -111,10 +111,10 @@ class MProducts extends CI_Model
 		$this->load->library('upload', $config);
 
 		if ($this->upload->do_upload('product_thumbnail')) {
-			return $this->upload->data('file_name');
+			return $this->upload->data("file_name");
+		}else{
+			return "default.png";
 		}
-
-		return "default.png";
 	}
 
 

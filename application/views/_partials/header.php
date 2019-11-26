@@ -44,14 +44,16 @@
     <!-- Modernizer Script for old Browsers -->
         <script src="<?php echo base_url('js3/modernizr-2.6.2.min.js')?>"></script>
 
+        <?php $this->load->view("_partials/function_ourships")?>
+
     </head>
   
     <body id="body">
   
     <!-- preloader -->
-    <div id="preloader">
+<!--     <div id="preloader">
       <img src="img3/preloader.gif" alt="Preloader">
-    </div>
+    </div> -->
     <!-- end preloader -->
     
     <!-- Start navbar  -->
@@ -76,7 +78,7 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="w3-dropdown-content">
-          <a href="#">Our ships</a>
+          <a href="<?php echo site_url('ourships')?>">Our ships</a>
           <a href="#">Destination</a>
         </div>
       </div>

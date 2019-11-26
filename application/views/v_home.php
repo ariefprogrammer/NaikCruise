@@ -66,16 +66,14 @@
         Brands
         ==================================== -->
     
-    <section id="brands" class="brands">
+<!--     <section id="brands" class="brands">
       <div class="container">
         <div class="row">
         
           <div class="sec-title-dark text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
             <h2>Brands</h2>
-            <!-- <div class="devider-dark"><i class="fab fa-bandcamp"></i></div> -->
           </div>
 
-          <!-- service item -->
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
@@ -87,9 +85,7 @@
               </div>
             </div>
           </div>
-          <!-- end service item -->
 
-          <!-- service item -->
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
@@ -101,9 +97,7 @@
               </div>
             </div>
           </div>
-          <!-- end service item -->
-          
-          <!-- service item -->
+
           <div class="col-md-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">              
               <div class="service-desc">
@@ -115,9 +109,7 @@
               </div>
             </div>
           </div>
-          <!-- end service item -->
-          
-          <!-- service item -->
+
           <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms">
             <div class="service-item">
               <div class="service-desc">
@@ -129,11 +121,10 @@
               </div>
             </div>
           </div>
-          <!-- end service item -->
             
         </div>
       </div>
-    </section>
+    </section> -->
     
         <!--
         End Brands

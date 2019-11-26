@@ -101,7 +101,7 @@
 
 		<div class="form-group">
 			<label>thumbnail</label>
-			<input class="form-control" type="text" name="product_thumbnail" placeholder="Type link here" value="">
+			<input class="form-control" type="file" name="product_thumbnail">
 		</div>
 
 		<div class="form-group">

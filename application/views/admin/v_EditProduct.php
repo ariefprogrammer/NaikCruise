@@ -87,7 +87,7 @@
 
 		<div class="form-group">
 			<label>thumbnail</label>
-			<input class="form-control" type="text" name="product_thumbnail" value="<?php echo $edit->product_thumbnail?>">
+			<input class="form-control" type="file" name="product_thumbnail" value="<?php echo $edit->product_thumbnail?>">
 		</div>
 
 		<div class="form-group">

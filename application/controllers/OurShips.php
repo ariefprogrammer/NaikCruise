@@ -15,9 +15,9 @@ class OurShips extends CI_Controller
 		$this->load->view("v_ourShip");
 	}
 
-	public function costa()
+	public function costaneoromantica()
 	{
-		$this->load->view("costaCruise/v_costaCruise");
+		$this->load->view("costaCruise/costaneoromantica");
 	}
 }
 

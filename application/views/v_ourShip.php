@@ -71,7 +71,7 @@
 								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
 								  <div class="brands-dropdown-content">
 								  <a href="#">Costa Fortuna Cruise</a>
-								  <a href="#">Costa Neo Romantica</a>
+								  <a href="<?php echo site_url('ourships/costaneoromantica')?>">Costa Neo Romantica</a>
 								  </div>
 								</div>
 			                </figcaption>

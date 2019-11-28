@@ -38,7 +38,50 @@
 
         <link rel="stylesheet" href="<?php echo base_url('css/styles.css')?>">
 
+    <!-- css dropdown ship -->
+        <style type="text/css">
+          .brands-dropbtn {
+            background-color: #FFFFFF;
+            color: black;
+            border: 2px solid #FF9B2D;
 
+          }
+
+          .brands-dropdown {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+          }
+
+          .brands-dropdown-content {
+            background-color: #FFFFFF;
+            color: black;
+            display: none;
+            text-align: left;
+            position: absolute;
+            min-width:300px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+
+          .brands-dropdown-content a {
+            color: black;
+            padding: 3%;
+            text-decoration: none;
+            display: block;
+          }
+
+          .brands-dropdown-content a:hover {background-color: #FF9B2D;border-radius: 5px;}
+
+          .brands-dropdown:hover .brands-dropdown-content {
+            display: block;
+          }
+
+          .brands-dropdown:hover .brands-dropbtn {
+            background-color: #FF9B2D;
+          }
+        </style>
         <!-- Bootstrap css -->
 
     <!-- Modernizer Script for old Browsers -->

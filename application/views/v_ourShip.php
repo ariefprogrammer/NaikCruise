@@ -22,7 +22,13 @@
 			                <img src="<?php echo base_url('img3/costa.png')?>" alt="Costa Cruise" class="img-responsive">
 			                <figcaption class="overlay" style="border-radius: 15px;">                  		              
 			                	<p style="margin-top: 40%">Royal Caribbean Cruise</p>                        
-			                	<button class="btn btn-all btn-block" style="margin-top: 3%"><b>Details</b></button>
+			                	<div class="brands-dropdown" style="margin-top: 3%">
+								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
+								  <div class="brands-dropdown-content">
+								  <a href="#">Voyager Of The Seas</a>
+								  <a href="#">Quantum Of The Seas</a>								  
+								  </div>
+								</div>
 			                </figcaption>
 			              </div>			              
 			            </figure>

@@ -54,7 +54,7 @@
           }
 
           .brands-dropdown-content {
-            background-color: #FFFFFF;
+            background-color: #e7e7e7;
             color: black;
             display: none;
             text-align: left;

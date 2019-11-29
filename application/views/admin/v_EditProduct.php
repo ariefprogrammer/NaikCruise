@@ -34,7 +34,7 @@
 
 		<div class="form-group">
 			<label>Highlight Date</label>
-			<input class="form-control" type="date" name="product_highlight_date" value="<?php echo $edit->product_highlight_date?>">
+			<input class="form-control" type="text" name="product_highlight_date" value="<?php echo $edit->product_highlight_date?>">
 		</div>
 
 		<div class="form-group">

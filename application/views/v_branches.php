@@ -1,6 +1,4 @@
 <?php $this->load->view("_partials/header")?>
-
-<?php $this->load->view("_partials/contact")?>
     <!-- Start Video -->
 
 <!--     <div style="margin-top:">
@@ -672,8 +670,10 @@
 
         <hr>
 
-
       </div>
 </section>
+
+
+<?php $this->load->view("_partials/contact")?>
 
 <?php $this->load->view("_partials/footer")?>

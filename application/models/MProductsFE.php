@@ -16,7 +16,7 @@ class MProductsFE extends CI_Model
 		// $sql = $this->db->query("SELECT * FROM tb_products WHERE id_status = 2 LIMIT 9");
 		// return $sql->result();
 
-		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list=tb_ships_list.id_ship_list WHERE id_status=2 LIMIT 9;");
+		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list=tb_ships_list.id_ship_list WHERE id_status=2 LIMIT 12;");
 		return $sql->result();
 	}
 

@@ -18,52 +18,52 @@
 
 		<div class="form-group">
 			<label>Name</label>
-			<input class="form-control" type="text" placeholder="Input as the text" name="product_name" value="">
+			<input class="form-control" type="text" placeholder="Input as the text" name="product_name">
 		</div>
 
 		<div class="form-group">
 			<label>Code</label>
-			<input class="form-control" type="text" name="product_code" placeholder="Input as the number" value="">
+			<input class="form-control" type="text" name="product_code" placeholder="Input as the number">
 		</div>
 
 		<div class="form-group">
 			<label>Position Order</label>
-			<input class="form-control" type="number" name="position_order" placeholder="Position order is optional" value="">
+			<input class="form-control" type="number" name="position_order" placeholder="Position order is optional">
 		</div>
 
 		<div class="form-group">
 			<label>Slug</label>
-			<input class="form-control" type="text" name="product_slug" placeholder="Input slug without space" value="">
+			<input class="form-control" type="text" name="product_slug" placeholder="Input slug without space">
 		</div>
 
 		<div class="form-group">
 			<label>Collection</label>
-			<input class="form-control" type="text" name="product_collection" placeholder="Input as the number" value="">
+			<input class="form-control" type="text" name="product_collection" placeholder="Input as the number">
 		</div>
 
 		<div class="form-group">
 			<label>Maximum Child Age</label>
-			<input class="form-control" type="number" name="product_maximum_child_age" placeholder="Input as the number" value="">
+			<input class="form-control" type="number" name="product_maximum_child_age" placeholder="Input as the number">
 		</div>
 
 		<div class="form-group">
 			<label>Highlight Date</label>
-			<input class="form-control" type="date" name="product_highlight_date" placeholder="Click here to choose" value="">
+			<input class="form-control" type="text" name="product_highlight_date" placeholder="Input as the text">
 		</div>
 
 		<div class="form-group">
 			<label>Total Days</label>
-			<input class="form-control" type="number" name="product_total_days" placeholder="Input as the number" value="">
+			<input class="form-control" type="number" name="product_total_days" placeholder="Input as the number">
 		</div>
 
 		<div class="form-group">
 			<label>Total Nights</label>
-			<input class="form-control" type="number" name="product_total_nights" placeholder="Input as the number" value="">
+			<input class="form-control" type="number" name="product_total_nights" placeholder="Input as the number">
 		</div>
 
 		<div class="form-group">
 			<label>Starting Price</label>
-			<input class="form-control" type="text" name="product_starting_price" placeholder="Default IDR" value="">
+			<input class="form-control" type="text" name="product_starting_price" placeholder="Default IDR">
 		</div>
 
 		<div class="form-group">

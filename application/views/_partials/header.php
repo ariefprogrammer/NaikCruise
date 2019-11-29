@@ -328,11 +328,11 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="w3-dropdown-content">
-          <a href="#">Get a ticket</a>
-          <a href="#">Boarding Day</a>
+          <a href="<?php echo site_url('howto/getticket')?>">Get a ticket</a>
+          <a href="<?php echo site_url('howto/boardingday')?>">Boarding Day</a>
         </div>
       </div>
-      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>">Contact Us</a>
+      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>">Branches</a>
       <a href="#">About</a>
       <a href="#">FAQ</a>
     </div>

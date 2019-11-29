@@ -332,7 +332,7 @@
           <a href="#">Boarding Day</a>
         </div>
       </div>
-      <a href="#">Contact Us</a>
+      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>">Contact Us</a>
       <a href="#">About</a>
       <a href="#">FAQ</a>
     </div>

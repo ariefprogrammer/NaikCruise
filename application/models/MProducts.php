@@ -72,7 +72,7 @@ class MProducts extends CI_Model
 		$this->db->select('tb_products.*, tb_ships_list.*');
 		$this->db->from('tb_products');
 		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
-		$this->db->where('id_product', $id);	
+		$this->db->where('id_product', $id);		
 		return $this->db->get()->row();
 		//return $this->db->get_where("tb_products", ["id_product" => $id])->row();
 	}

@@ -28,10 +28,11 @@ class Products extends CI_Controller
 	public function add()
 	{
 		if(isset($_POST['submit_product'])){
-			$id_last = $this->input->post("id_product");
-			$this->MProducts->save($_POST);
+			$id_last = $this->input->post("id_product");			
+			$this->MProducts->save($_POST);			
 			redirect("admin/products/lihat/".$id_last);
 		}
+		$data["cruises"] = $this->MProducts->dd_cruise();
 		$data["lastId"] = $this->MProducts->getLastId();
 		$this->load->view("admin/v_AddProduct", $data);
 	}
@@ -60,7 +61,7 @@ class Products extends CI_Controller
 	public function lihat($id)
 	{
 		if ($this->session->userdata('isloggedin')) {
-			$data["product"] = $this->MProducts->getById($id);
+			$data["product"] = $this->MProducts->getById($id);		
 			$data["lihatItinerary"] = $this->MProducts->lihatItinerary($id);
 			$data["lihatImageSlider"] =$this->MProducts->lihatImageSlider();
 			$this->load->view("admin/v_DetailsProduct", $data);
@@ -75,8 +76,9 @@ class Products extends CI_Controller
 		if (isset($_POST['update_product'])) {
 			$this->MProducts->update($_POST, $id);
 			redirect("admin/products");
-		}
+		}		
 		$data["edit"] = $this->MProducts->getById($id);
+		$data["dd_cruise"] = $this->MProducts->dd_cruise();
 		$this->load->view("admin/v_EditProduct", $data);
 	}
 

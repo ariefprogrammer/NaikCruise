@@ -73,7 +73,15 @@
 
 		<div class="form-group">
 			<label>Transportation</label>
-			<input class="form-control" type="text" name="product_transportation" placeholder="What cruise type" value="">
+			<!-- <input class="form-control" type="text" name="id_ship_list" placeholder="What cruise type" value=""> -->
+			<select class="form-control" name="id_ship_list">
+				<?php
+					echo '<option value="">--choose cruise--</option>';
+					foreach ($cruises as $cruise) {
+						echo '<option value="'.$cruise->id_ship_list.'">'.$cruise->name_ship_list.'</option>';
+					}
+				?>
+			</select>
 		</div>
 
 		<div class="form-group">

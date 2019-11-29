@@ -21,7 +21,7 @@ class MProducts extends CI_Model
 		$product_total_nights = $this->db->escape($post["product_total_nights"]);
 		$product_starting_price = $this->db->escape($post["product_starting_price"]);
 		$product_price_info = $this->db->escape($post["product_price_info"]);
-		$product_transportation = $this->db->escape($post["product_transportation"]);
+		$id_ship_list = $this->db->escape($post["id_ship_list"]);
 		$product_accomodation = $this->db->escape($post["product_accomodation"]);
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
@@ -30,7 +30,7 @@ class MProducts extends CI_Model
 		$product_flyer = $this->db->escape($post["product_flyer"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $product_transportation, $product_accomodation, product_included, $product_excluded, $product_terms, '$product_thumbnail', product_flyer, $id_status)");
+		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, product_included, $product_excluded, $product_terms, '$product_thumbnail', product_flyer, $id_status)");
 
 		if($sql){
 			return true;
@@ -41,7 +41,17 @@ class MProducts extends CI_Model
 
 	public function getAll()
 	{
-		return $this->db->get("tb_products")->result();
+		$this->db->select('tb_products.*, tb_ships_list.*');
+		$this->db->from('tb_products');
+		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');		
+		return $this->db->get()->result();
+		// return $this->db->get("tb_products")->result();
+	}
+
+	public function dd_cruise()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_ships_list");
+		return $sql->result();
 	}
 
 	public function published()
@@ -59,7 +69,12 @@ class MProducts extends CI_Model
 
 	public function getById($id)
 	{
-		return $this->db->get_where("tb_products", ["id_product" => $id])->row();
+		$this->db->select('tb_products.*, tb_ships_list.*');
+		$this->db->from('tb_products');
+		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
+		$this->db->where('id_product', $id);	
+		return $this->db->get()->row();
+		//return $this->db->get_where("tb_products", ["id_product" => $id])->row();
 	}
 
 	public function getLastId()
@@ -81,7 +96,7 @@ class MProducts extends CI_Model
 		$product_total_nights = $this->db->escape($post["product_total_nights"]);
 		$product_starting_price = $this->db->escape($post["product_starting_price"]);
 		$product_price_info = $this->db->escape($post["product_price_info"]);
-		$product_transportation = $this->db->escape($post["product_transportation"]);
+		$id_ship_list = $this->db->escape($post["id_ship_list"]);
 		$product_accomodation = $this->db->escape($post["product_accomodation"]);
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
@@ -90,7 +105,7 @@ class MProducts extends CI_Model
 		$product_flyer = $this->db->escape($post["product_flyer"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, product_transportation = $product_transportation, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = '$product_thumbnail', product_flyer = $product_flyer, id_status = $id_status WHERE id_product= ".intval($id));
+		$sql = $this->db->query("UPDATE tb_products SET product_name = $product_name, product_code = $product_code, position_order = $position_order, product_slug = $product_slug, product_collection = $product_collection, product_maximum_child_age = $product_maximum_child_age, product_highlight_date = $product_highlight_date, product_total_days = $product_total_days, product_total_nights = $product_total_nights, product_starting_price = $product_starting_price, product_price_info = $product_price_info, id_ship_list = $id_ship_list, product_accomodation = $product_accomodation, product_included = $product_included, product_excluded = $product_excluded, product_terms = $product_terms, product_thumbnail = '$product_thumbnail', product_flyer = $product_flyer, id_status = $id_status WHERE id_product= ".intval($id));
 
 		return true;
 	}

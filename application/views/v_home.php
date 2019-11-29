@@ -179,7 +179,7 @@
               <div class="member-thumb">
                 <img src="<?php echo $best->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
                 <figcaption class="overlay">                  
-                  <h5 style="text-align: left; margin-top: 40%;"><?php echo $best->product_transportation?></h5>
+                  <h5 style="text-align: left; margin-top: 40%;"><?php echo $best->name_ship_list?></h5>
                   <h5 style="text-align: left"><?php echo $best->product_highlight_date?></h5>
                   <p style="text-align: left"><?php echo "IDR " .$best->product_starting_price?></p>
                   <button class="btn btn-all btn-block" style="margin-top: 7%"><b>Details</b></button>

@@ -59,7 +59,12 @@
 
 		<div class="form-group">
 			<label>Transportation</label>
-			<input class="form-control" type="text" name="product_transportation" value="<?php echo $edit->product_transportation?>">
+			<!-- <input class="form-control" type="text" name="id_ship_list" value="<?php echo $edit->id_ship_list?>"> -->
+			<select class="form-control" name="id_ship_list">
+				<?php foreach($dd_cruise as $cruise){?>
+					<option value="<?php echo $cruise->id_ship_list?>" <?php if($edit->id_ship_list == $cruise->id_ship_list){ echo 'selected'; } ?> > <?php echo $cruise->name_ship_list?></option>
+				<?php } ?>
+			</select>
 		</div>
 
 		<div class="form-group">

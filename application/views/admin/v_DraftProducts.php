@@ -31,7 +31,7 @@
                     <td><?php echo $row->product_slug?></td>
                     <td><?php echo $row->product_collection?></td>
                     <!-- <td><?php echo $row->product_starting_price?></td> -->
-                    <td><?php echo $row->product_transportation?></td>
+                    <td><?php echo $row->id_ship_list?></td>
                     <!-- <td><?php echo $row->product_maximum_child_age?></td> -->
                     <td><?php echo $row->id_status?></td>
                     <td width="150" class="text-center">

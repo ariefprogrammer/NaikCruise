@@ -10,7 +10,7 @@
           </div>
           
           <div class="sec-title-dark text-center wow fadeInRight animated" data-wow-duration="500ms">
-            <p>Many option for you to choose cruise. Select brand first</p>
+            <p>Many option for you to choose cruise. Select cruise to see more details</p>
           </div>
 		
           <section style="margin-top: 5%">

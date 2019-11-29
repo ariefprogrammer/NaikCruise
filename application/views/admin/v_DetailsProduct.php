@@ -125,7 +125,7 @@
         Cruise
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_transportation?>
+        <?php echo ":    " .$product->name_ship_list?>
       </div>
     </div>
 

@@ -41,7 +41,7 @@ class MProductsFE extends CI_Model
 
 		// $sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.*, tb_itinerary.*, tb_image_slider_product.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status INNER JOIN tb_itinerary ON tb_products.id_product = tb_itinerary.id_product INNER JOIN tb_image_slider_product ON tb_products.id_product=tb_image_slider_product.id_product;");
 
-		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status;");
+		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status WHERE product_slug = '$slug'");
 
 		return $sql->row();
 	}

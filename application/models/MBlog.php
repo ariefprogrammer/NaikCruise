@@ -44,6 +44,23 @@ class MBlog extends CI_Model
 		return $this->db->get()->result();
 	}
 
+	public function getById($id)
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_blog =".intval($id));
+		return $sql->row();
+	}
+
+	public function update($post, $id)
+	{
+		$title_blog = $this->db->escape($post["title_blog"]);
+		$content_blog = $this->db->escape($post["content_blog"]);
+		$id_category = $this->db->escape($post["id_category"]);
+		$id_status = $this->db->escape($post["id_status"]);
+
+		$sql = $this->db->query("UPDATE tb_blogs SET title_blog = $title_blog, content_blog = $content_blog, id_category = $id_category, id_status = $id_status WHERE id_blog= ".intval($id));
+		return true;
+	}
+
 }
 
 ?>

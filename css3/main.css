@@ -12,11 +12,11 @@ body {
     color: #6a737b;
 }
 
-ol, ul {
+/*ol, ul {
     margin: 0;
     padding: 0;
     list-style: none;
-}
+}*/
 
 figure, p {
     margin: 0;
@@ -636,7 +636,6 @@ top: -8px;
   font-size: 14px;
   line-height: 10px;
 }
-
 
 
 /*=========================================

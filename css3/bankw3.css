@@ -1,0 +1,57 @@
+
+/* Style the tab */
+.det-tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #e8e8e8;
+}
+
+/* Style the buttons inside the tab */
+.det-tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.det-tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.det-tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.det-tabcontent {  
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.m-t-1{
+  margin-top: 1%;
+}
+
+.m-t-2{
+  margin-top: 2%;
+}
+
+.m-t-3{
+  margin-top: 3%;
+}
+
+.m-t-4{
+  margin-top: 4%;
+}
+
+.m-t-5{
+  margin-top: 5%;
+}

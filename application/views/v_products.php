@@ -14,7 +14,7 @@
           
           <?php foreach($allProducts as $all):?>
           <!-- single member -->
-          <a href="#">
+          <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>">
 	          <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
 	            <div class="member-thumb">
 	              <img src="<?php echo $all->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
@@ -22,15 +22,10 @@
 	                <h5 style="text-align: left; margin-top: 40%;"><?php echo $all->name_ship_list?></h5>
 	                <h5 style="text-align: left"><?php echo $all->product_highlight_date?></h5>
 	                <p style="text-align: left"><?php echo "IDR " .$all->product_starting_price?></p>
-	                <button class="btn btn-all btn-block" style="margin-top: 7%;"><b>Details</b></button>
-<!-- 	                <ul class="social-links text-center">
-	                  <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-	                  <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-	                  <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-	                </ul> -->
+	                <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>"><button class="btn btn-all btn-block" style="margin-top: 7%;"><b>Details</b></button></a> 
 	              </figcaption>
 	            </div>
-	            <h4><?php echo $all->product_name?></h4>
+	            <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>"><h4><?php echo $all->product_name?></h4></a>
 	          </figure>
           </a>
           <!-- end single member -->

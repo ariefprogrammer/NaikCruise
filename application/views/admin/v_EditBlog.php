@@ -3,7 +3,7 @@
 
 		<div class="form-group">
 			<label>Title</label>
-			<input class="form-control" type="text" name="title_blog">
+			<input class="form-control" type="text" name="title_blog" value="">
 		</div>
 
 		<div class="form-group">

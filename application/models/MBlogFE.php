@@ -13,5 +13,11 @@ class MBlogFE extends CI_Model
 		return $sql->row();
 	}
 
+	public function howToBoarding()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category = 2 ORDER BY id_category DESC LIMIT 1");
+		return $sql->row();
+	}
+
 }
 ?>

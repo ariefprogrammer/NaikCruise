@@ -24,7 +24,8 @@ class Howto extends CI_Controller
 
 	public function boardingDay()
 	{
-		$this->load->view("v_boardingDay");
+		$data["boarding"] = $this->MBlogFE->howToBoarding();
+		$this->load->view("v_boardingDay", $data);
 	}
 }
 

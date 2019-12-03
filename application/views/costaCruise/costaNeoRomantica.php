@@ -1,4 +1,6 @@
 <?php $this->load->view("_partials/header") ?>
+<!-- <?php var_dump($ship)?> -->
+
     <section id="bestSeller" class="bestSeller ">
       <div class="container">
         <div class="row">
@@ -159,6 +161,45 @@
         </div>
       </div>
     </section>
+
+    <!--
+        Products
+        ==================================== -->    
+    
+    <section id="bestSeller" class="bestSeller">
+      <div class="container">
+        <div class="row">
+    
+          <div class="sec-title-dark text-center wow fadeInUp animated" data-wow-duration="700ms" style="margin-bottom: 2.5%">
+            <h2>Related Products</h2>
+          </div>
+          
+          <?php foreach($ship as $costa):?>
+          <!-- single member -->
+          <a href="<?php echo site_url('products/view/'.$costa->id_product.'/'.$costa->product_slug)?>">
+            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+              <div class="member-thumb">
+                <img src="<?php echo $costa->product_thumbnail?>" alt="Product Thumbnail" class="img-responsive">
+                <figcaption class="overlay">                  
+                  <h5 style="text-align: left; margin-top: 40%;"><?php echo $costa->name_ship_list?></h5>
+                  <h5 style="text-align: left"><?php echo $costa->product_highlight_date?></h5>
+                  <p style="text-align: left"><?php echo "IDR " .$costa->product_starting_price?></p>
+                  <a href="<?php echo site_url('products/view/'.$costa->id_product.'/'.$costa->product_slug)?>"><button class="btn btn-all btn-block" style="margin-top: 7%;"><b>Details</b></button></a> 
+                </figcaption>
+              </div>
+              <a href="<?php echo site_url('products/view/'.$costa->id_product.'/'.$costa->product_slug)?>"><h4><?php echo $costa->product_name?></h4></a>
+            </figure>
+          </a>
+          <!-- end single member -->
+        <?php endforeach;?>
+          
+        </div>
+      </div>
+    </section>
+    
+        <!--
+        Products End
+        ==================================== -->
 
     <!-- Slider cabins -->
     <script>

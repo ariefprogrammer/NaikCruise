@@ -57,6 +57,12 @@ class MProductsFE extends CI_Model
 		$sql = $this->db->query("SELECT * FROM tb_image_slider_product WHERE id_product =".intval($id));
 		return $sql->result();
 	}
+
+	public function getProductByShip($ship)
+	{
+		$sql = $this->db->query("SELECT tb_products.*, tb_ships_list.*, tb_status.* FROM tb_products INNER JOIN tb_ships_list ON tb_products.id_ship_list = tb_ships_list.id_ship_list INNER JOIN tb_status ON tb_products.id_status = tb_status.id_status WHERE tb_products.id_ship_list =" .intval($ship));
+		return $sql->result();
+	}
 }
 
 

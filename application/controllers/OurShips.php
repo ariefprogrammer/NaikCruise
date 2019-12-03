@@ -7,6 +7,7 @@ class OurShips extends CI_Controller
 	function __construct()
 	{
 		parent:: __construct();
+		$this->load->model('MProductsFE');
 
 	}
 
@@ -15,9 +16,10 @@ class OurShips extends CI_Controller
 		$this->load->view("v_ourShip");
 	}
 
-	public function costaneoromantica()
+	public function costaneoromantica($ship)
 	{
-		$this->load->view("costaCruise/costaneoromantica");
+		$data["ship"] = $this->MProductsFE->getProductByShip($ship);
+		$this->load->view("costaCruise/costaneoromantica", $data);
 	}
 }
 

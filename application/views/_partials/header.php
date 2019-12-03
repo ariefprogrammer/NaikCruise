@@ -294,7 +294,7 @@
   
     <!-- preloader -->
 <!--     <div id="preloader">
-      <img src="img3/preloader.gif" alt="Preloader">
+      <img src="img3/steer.png" alt="Preloader">
     </div> -->
     <!-- end preloader -->
     

@@ -336,6 +336,6 @@
       </div>
       <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>">Branches</a>
       <a href="#">About</a>
-      <a href="#">FAQ</a>
+      <a href="<?php echo site_url('faq')?>">FAQ</a>
     </div>
     <!-- End Navbar -->

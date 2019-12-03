@@ -19,5 +19,17 @@ class MBlogFE extends CI_Model
 		return $sql->row();
 	}
 
+	public function allFaq()
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_category = 3");
+		return $sql->result();
+	}
+
+	public function viewFaq($id)
+	{
+		$sql = $this->db->query("SELECT * FROM tb_blogs WHERE id_blog =" .intval($id));
+		return $sql->row();
+	}
+
 }
 ?>

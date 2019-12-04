@@ -261,19 +261,19 @@
         <div class="tslideshow-container">
 
           <div class="tmySlides">            
-              <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
+              <img style="width: 20%; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/man1.jpg')?>"><br>
               <p class="tauthor" style="margin-top: 2%"><b>Ernest Hemingway</b></p>
               <p style="margin-top: 2%"><i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</i> </p>              
           </div>
 
           <div class="tmySlides">
-            <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
-              <p class="tauthor" style="margin-top: 2%"><b>Ganjar pranowo</b></p>
+            <img style="width: 20%; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/girl1.jpg')?>"><br>
+              <p class="tauthor" style="margin-top: 2%"><b>Siti Juleha</b></p>
               <p style="margin-top: 2%"><i>"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."</i> </p>    
           </div>
 
           <div class="tmySlides">
-            <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
+            <img style="width: 20%; height: 20%;border-radius: 100%;" src="<?php echo base_url('img3/man2.jpg')?>"><br>
               <p class="tauthor" style="margin-top: 2%"><b>Subagyo Arkabi</b></p>
               <p style="margin-top: 2%"><i>"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</i> </p>    
           </div>

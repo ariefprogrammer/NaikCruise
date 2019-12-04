@@ -67,7 +67,7 @@
             z-index: 1;
           }
 
-          .brands-dropdown-content a {
+/*          .brands-dropdown-content a {
             color: black;
             padding: 3%;
             text-decoration: none;
@@ -82,20 +82,18 @@
 
           .brands-dropdown:hover .brands-dropbtn {
             background-color: #FF9B2D;
-          }
+          }*/
 
-        /*Facility Slider*/
           .facility-Slides {display: none}
           .facility-img {vertical-align: middle;}
 
-          /* Slideshow container */
+
           .facility-slideshow-container {
             max-width: 1000px;
             position: relative;
             margin: auto;
           }
 
-          /* Next & previous buttons */
           .facility-prev, .facility-next {
             cursor: pointer;
             position: absolute;
@@ -111,13 +109,12 @@
             user-select: none;
           }
 
-          /* Position the "next button" to the right */
           .facility-next {
             right: 0;
             border-radius: 3px 0 0 3px;
           }
 
-          /* On hover, add a black background color with a little bit see-through */
+
           .facility-prev:hover, .facility-next:hover {
             background-color: rgba(0,0,0,0.8);
           }

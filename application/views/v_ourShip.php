@@ -15,88 +15,99 @@
 		
           <section style="margin-top: 5%">
           	<div class="row">
-           		<div class="col-md-3">
-          			<div>
-          			<!-- single member -->
-			            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-			              <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
-			                <img src="<?php echo base_url('img3/dream.png')?>" alt="Costa Cruise" class="img-responsive">
-			                <figcaption class="overlay" style="border-radius: 15px;">                  	              
-			                	<p style="margin-top: 40%">Dream Cruise</p>                        
-			                	<div class="brands-dropdown" style="margin-top: 3%">
-								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
-								  <div class="brands-dropdown-content">
-								  <a href="#">Genting Dream</a>
-								  <a href="#">World Dream</a>
-								  <a href="#">Explorer Dream</a>
-								  <a href="#">Global Dream</a>								  
-								  </div>
-								</div>
-			                </figcaption>
-			              </div>			              
-			            </figure>
-			        <!-- End single member -->
-			        </div>         			
-          		</div>
+          		<div class="det-tab">
+					<button id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'dreamCruise')">Dream Cruise</button>
+					<button class="det-tablinks" onclick="openCity(event, 'royalCaribbeanCruise')">Royal Caribbean Cruise</button>
+					<button class="det-tablinks" onclick="openCity(event, 'costaCruise')">Costa Cruise</button>
+					<button class="det-tablinks" onclick="openCity(event, 'norwegianCruise')">Norwegian Cruise</button>
+				</div>
 
-          		<div class="col-md-3">
-          			<!-- single member -->
-			            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-			              <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
-			                <img src="<?php echo base_url('img3/royal-caribbean.png')?>" alt="Costa Cruise" class="img-responsive">
-			                <figcaption class="overlay" style="border-radius: 15px;">                  		              
-			                	<p style="margin-top: 40%">Royal Caribbean Cruise</p>                        
-			                	<div class="brands-dropdown" style="margin-top: 3%">
-								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
-								  <div class="brands-dropdown-content">
-								  <a href="#">Voyager Of The Seas</a>
-								  <a href="#">Quantum Of The Seas</a>								  
-								  </div>
-								</div>
-			                </figcaption>
-			              </div>			              
-			            </figure>
-			        <!-- End single member -->
+				<div id="dreamCruise" class="det-tabcontent">						
+					<div class="container" style="padding: 3%">
+				        <div class="row">
+				          	<a href="#" style="color: #575757!important;">
+				          		<div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+				            		<img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+				            		<div class="text-center"><h4><b>Genting Dream</b></h4></div>
+				          		</div>
+				        	</a> 
 
-          		</div>
+				        	<a href="#" style="color: #575757!important;">
+					          <div class="col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>World Dream</b></h4></div>
+					          </div>
+				          	</a>
 
-          		<div class="col-md-3">
-          			<!-- single member -->
-			            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-			              <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
-			                <img src="<?php echo base_url('img3/costa.png')?>" alt="Costa Cruise" class="img-responsive">
-			                <figcaption class="overlay" style="border-radius: 15px;">                  	              
-			                	<p style="margin-top: 40%">Costa Cruise</p>                        
-			                	<div class="brands-dropdown" style="margin-top: 3%">
-								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
-								  <div class="brands-dropdown-content">
-								  <a href="#">Costa Fortuna Cruise</a>
-								  <a href="<?php echo site_url('ourships/costaneoromantica/8')?>">Costa Neo Romantica</a>
-								  </div>
-								</div>
-			                </figcaption>
-			              </div>			              
-			            </figure>
-			        <!-- End single member -->          			
-          		</div>
-          		<div class="col-md-3">
-          			<!-- single member -->
-			            <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
-			              <div class="member-thumb" style="border: 1px solid #0D47A1; border-radius: 15px;">
-			                <img src="<?php echo base_url('img3/ncl.png')?>" alt="Costa Cruise" class="img-responsive">
-			                <figcaption class="overlay" style="border-radius: 15px;"> 
-			                	<p style="margin-top: 40%">Norwegian Cruise</p>                        
-			                	<div class="brands-dropdown" style="margin-top: 3%">
-								  <button class="btn brands-dropbtn btn-block"><b>Details</b></button>
-								  <div class="brands-dropdown-content">
-								  <a href="#">Norwegian Jade Cruise</a>
-								  </div>
-								</div>
-			                </figcaption>
-			              </div>			              
-			            </figure>
-			        <!-- End single member -->          			
-          		</div>
+				          	<a href="#" style="color: #575757!important;">
+					          <div class="col-sm-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Explorer Dream</b></h4></div>
+					          </div>
+				          	</a>
+
+				          	<a href="#" style="color: #575757!important;">
+					          <div class="col-sm-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Global Dream</b></h4></div>
+					          </div>
+				          	</a>				        
+				      	</div>
+				    </div>		  
+				</div>
+
+				<div id="royalCaribbeanCruise" class="det-tabcontent">
+					<div class="container" style="padding: 3%">
+				        <div class="row">
+				        	<a href="#" style="color: #575757!important;">
+					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Voyager Of The Seas</b></h4></div>
+					          </div>
+				      		</a>
+
+				          	<a href="#" style="color: #575757!important;">
+					          <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Quantum Of The Seas</b></h4></div>
+					          </div>
+				          	</a>				        
+				      	</div>
+				    </div>				  
+				</div>
+
+				<div id="costaCruise" class="det-tabcontent">
+					<div class="container" style="padding: 3%">
+				        <div class="row">
+				        	<a href="#" style="color: #575757!important;">
+					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Costa Fortuna Cruise</b></h4></div>
+					          </div>
+				          	</a>
+
+				          	<a href="<?php echo site_url('ourships/costaneoromantica/8')?>" style="color: #575757!important;">
+					          <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Costa Neo Romantica</b></h4></div>
+					          </div>
+				          	</a>				        
+				      	</div>
+				    </div>				  
+				</div>
+
+				<div id="norwegianCruise" class="det-tabcontent">
+					<div class="container" style="padding: 3%">
+				        <div class="row">
+				        	<a href="#" style="color: #575757!important;">
+					          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+					            <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
+					            <div class="text-center"><h4><b>Norwegian Jade Cruise</b></h4></div>
+					          </div>
+				      		</a>
+				      	</div>
+				    </div>				  
+				</div>
           		
           	</div>
           </section>		          

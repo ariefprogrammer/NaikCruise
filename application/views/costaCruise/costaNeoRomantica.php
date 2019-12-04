@@ -79,19 +79,19 @@
                     <div class="cabins-slideshow-container">
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">1 / 3</div>
-                          <img class="cabins-img" src="https://www.his-travel.co.id/files/Club%20Med/banner/banner-page-top%201.png?_t=1574828381" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Text</div>
                         </div>
 
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">2 / 3</div>
-                          <img class="cabins-img" src="https://www.his-travel.co.id/files/Club%20Med/banner/banner-page-top%201.png?_t=1574828381" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Two</div>
                         </div>
 
                         <div class="cabins-Slides cabins-fade">
                           <div class="cabins-numbertext">3 / 3</div>
-                          <img class="cabins-img" src="https://www.his-travel.co.id/files/Club%20Med/banner/banner-page-top%201.png?_t=1574828381" style="width:100%">
+                          <img class="cabins-img" src="<?php echo base_url('img3/contoh.png')?>" style="width:100%">
                           <div class="cabins-text">Caption Three</div>
                         </div>
 
@@ -108,10 +108,32 @@
                 </div>
 
                 <div class="col-md-8">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                  <div class="det-tab">
+                    <button id="defaultOpen" class="det-tablinks" onclick="openCity(event, 'satu')">Room Details</button>
+                    <button class="det-tablinks" onclick="openCity(event, 'dua')">Beds Details</button>
+                    <button class="det-tablinks" onclick="openCity(event, 'tiga')">Decks Plan</button>                    
+                  </div>
+
+                  <div id="satu" class="det-tabcontent" style="padding: 2%">           
+                      <h5><b>Room Details</b></h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                  </div>
+
+                  <div id="dua" class="det-tabcontent" style="padding: 2%">           
+                      <h5><b>Beds Details</b></h5>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+                  </div>
+
+                  <div id="tiga" class="det-tabcontent" style="padding: 2%">           
+                      <h5><b>This Room is Available in Decks :</b></h5>
+                      <p>3, 5, 6, 7, 8, 9</p>
+                  </div>
+                  
                 </div>              
             </div>
-          </section>                      
+          </section>
+
+                               
         </div>
       </div>
     </section>

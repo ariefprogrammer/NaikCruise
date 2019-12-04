@@ -17,7 +17,7 @@
         ID
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->id_product?>
+        <?php echo $product->id_product?>
       </div>
     </div>
 
@@ -26,7 +26,7 @@
         Product Name
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_name?>
+        <?php echo $product->product_name?>
       </div>
     </div>
 
@@ -35,7 +35,7 @@
         Product Code
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_code?>
+        <?php echo $product->product_code?>
       </div>
     </div>
 
@@ -44,7 +44,7 @@
         Position Order
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->position_order?>
+        <?php echo $product->position_order?>
       </div>
     </div>
 
@@ -53,7 +53,7 @@
         Slug
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_slug?>
+        <?php echo $product->product_slug?>
       </div>
     </div>
 
@@ -62,7 +62,7 @@
         Collection
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_collection?>
+        <?php echo $product->product_collection?>
       </div>
     </div>
 
@@ -71,7 +71,7 @@
         Max Child Age
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_maximum_child_age?>
+        <?php echo $product->product_maximum_child_age?>
       </div>
     </div>
 
@@ -80,7 +80,7 @@
         Highlight Date
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_highlight_date?>
+        <?php echo $product->product_highlight_date?>
       </div>
     </div>
 
@@ -89,7 +89,7 @@
         Total Days
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_total_days?>
+        <?php echo $product->product_total_days?>
       </div>
     </div>
 
@@ -98,7 +98,7 @@
         Total Nights
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_total_nights?>
+        <?php echo $product->product_total_nights?>
       </div>
     </div>
 
@@ -107,7 +107,7 @@
         Starting Price
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_starting_price?>
+        <?php echo $product->product_starting_price?>
       </div>
     </div>
 
@@ -116,7 +116,7 @@
         Price Info
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_price_info?>
+        <?php echo $product->product_price_info?>
       </div>
     </div>
 
@@ -125,7 +125,7 @@
         Cruise
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->name_ship_list?>
+        <?php echo $product->name_ship_list?>
       </div>
     </div>
 
@@ -134,7 +134,7 @@
         Accomodation
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_accomodation?>
+        <?php echo $product->product_accomodation?>
       </div>
     </div>
 
@@ -143,7 +143,7 @@
         Included
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_included?>
+        <?php echo $product->product_included?>
       </div>
     </div>
 
@@ -152,7 +152,7 @@
         Excluded
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_excluded?>
+        <?php echo $product->product_excluded?>
       </div>
     </div>
 
@@ -161,7 +161,7 @@
         Terms
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_terms?>
+        <?php echo $product->product_terms?>
       </div>
     </div>
 
@@ -170,7 +170,7 @@
         Thumbnail
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_thumbnail?>
+        <?php echo $product->product_thumbnail?>
       </div>
     </div>
 
@@ -179,7 +179,7 @@
         Flyer
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->product_flyer?>
+        <?php echo $product->product_flyer?>
       </div>
     </div>
 
@@ -188,7 +188,7 @@
         Status
       </div>
       <div class="col-md-9">
-        <?php echo ":    " .$product->id_status?>
+        <?php echo $product->name_status?>
       </div>
     </div>
     <hr>

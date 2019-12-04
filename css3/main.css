@@ -163,7 +163,7 @@ body > section,
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-index: 10;
 }
 
 .w3-dropdown-content a {
@@ -214,6 +214,22 @@ body > section,
 	color: white;
 }
 
+.sec-sub-title-dark {
+  margin: 35px 0 45px;
+  color: #333;
+}
+
+.sec-sub-title p {
+  font-weight: 600;
+  color: #333;
+  line-height: 24px;
+  font-size: 18px;
+  color: white;
+}
+
+.color-dark{
+  color: #333;
+}
 .devider {
   margin-top: 30px;
 }
@@ -474,7 +490,7 @@ top: -8px;
 ==========================================*/
 
 .brands {
-  background-color: #f4f7f9; 
+  background-color: #e9e9e9; 
   /*background-color: #0D47A1;*/
 }
 
@@ -526,7 +542,7 @@ top: -8px;
 
 
 .aboutNaikCruise{
-  background-color: #0D47A1;
+  background-color: #e9e9e9;
 }
 
 
@@ -642,7 +658,7 @@ top: -8px;
 	Product
 ==========================================*/
 .bestSeller{
-  background-color: #f4f7f9 ;
+  background-color: white ;
 }
 .member-thumb {
   width: 273px;

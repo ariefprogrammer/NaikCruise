@@ -61,80 +61,13 @@
         <!--
         End Home SliderEnd
         ==================================== -->
-    
-        <!--
-        Brands
-        ==================================== -->
-    
-<!--     <section id="brands" class="brands">
-      <div class="container">
-        <div class="row">
-        
-          <div class="sec-title-dark text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
-            <h2>Brands</h2>
-          </div>
 
-          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
-            <div class="service-item">              
-              <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/costa.png')?>" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center; margin-top: 15%;">Costa Cruise</h3>
-                <div style="text-align: center">
-                  <a href="<?php echo site_url('CostaCruise')?>"><button class="btn btn-all btn-block"><b>Details</b></button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="500ms">
-            <div class="service-item">              
-              <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center; margin-top: 15%;">Norwegian Cruise Line</h3>
-                <div style="text-align: center">
-                  <a href="<?php echo site_url('CostaCruise')?>"><button class="btn btn-all btn-block"><b>Details</b></button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
-            <div class="service-item">              
-              <div class="service-desc">
-                <a href="https://www.google.com"><img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test"></a>
-                <h3 style="text-align: center; margin-top: 15%;">Dream Cruise</h3>
-                <div style="text-align: center">
-                  <a href="https://www.google.com"><button class="btn btn-all btn-block"><b>Details</b></button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-3 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="500ms">
-            <div class="service-item">
-              <div class="service-desc">
-                <img style="width:100%; height:100%;" src="<?php echo base_url('img3/dream-cruise.png')?>" class="rounded mx-auto d-block" alt="test">
-                <h3 style="text-align: center; margin-top: 15%;">Costa Cruise</h3>
-                <div style="text-align: center">
-                  <a href="https://www.google.com"><button class="btn btn-all btn-block"><b>Details</b></button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-            
-        </div>
-      </div>
-    </section> -->
-    
-        <!--
-        End Brands
-        ==================================== -->
         <!-- 
         About Naik Cruise
         ==================================== -->
     <section id="aboutNaikCruise" class="aboutNaikCruise">
       <div class="container">
-        <div class="sec-title text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
+        <div class="sec-title-dark text-center wow fadeInDownBig" data-wow-duration ="500ms" data-wow-delay="100ms">
           <h2>About Naik Cruise</h2>
           <div> </div>
         </div>
@@ -143,7 +76,7 @@
           <div class="col-md-3 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
             <img src="<?php echo base_url('img3/boat.png')?>" style="width: 100%; height: 100%;">
           </div>
-          <div class="col-md-7 wow fadeInRight" style="margin-top: 5%; color: white;" data-wow-duration="500ms" data-wow-delay="700ms">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+          <div class="col-md-7 wow fadeInRight" style="margin-top: 5%; " data-wow-duration="500ms" data-wow-delay="700ms">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
         </div>
         
       </div>
@@ -169,7 +102,7 @@
             <!-- <div class="devider-dark"><i class="fa fa-heart-o fa-lg"></i></div> -->
           </div>
           
-          <div class="sec-sub-title text-center wow fadeInRight animated" data-wow-duration="500ms">
+          <div class="sec-sub-title-dark text-center wow fadeInRight animated" data-wow-duration="500ms">
             <p>We give you the best offers from our best seller products</p>
           </div>
           <?php foreach($bestSeller as $best):?>
@@ -190,7 +123,7 @@
                   </ul> -->
                 </figcaption>
               </div>
-              <h4><?php echo $best->product_name?></h4>
+              <h4 class="color-dark" ><?php echo $best->product_name?></h4>
             </figure>
           </a>
           <!-- end single member -->
@@ -313,6 +246,56 @@
 
     </section>
   -->   
+  <!--
+        Testimonials
+        ==================================== -->
+    
+    <section id="brands" class="brands">
+      <div class="container">
+        <div class="row">
+        
+          <div class="sec-title-dark text-center mb50 wow bounceInDown animated" data-wow-duration="500ms">
+            <h2>Testimonials</h2>
+          </div>
+
+        <div class="tslideshow-container">
+
+          <div class="tmySlides">            
+              <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
+              <p class="tauthor" style="margin-top: 2%"><b>Ernest Hemingway</b></p>
+              <p style="margin-top: 2%"><i>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."</i> </p>              
+          </div>
+
+          <div class="tmySlides">
+            <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
+              <p class="tauthor" style="margin-top: 2%"><b>Ganjar pranowo</b></p>
+              <p style="margin-top: 2%"><i>"It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."</i> </p>    
+          </div>
+
+          <div class="tmySlides">
+            <img style="width: 150px; height: 150px;" src="https://www.his-travel.co.id/files/limon-bus/logo-his.jpg?_t=1571127662"><br>
+              <p class="tauthor" style="margin-top: 2%"><b>Subagyo Arkabi</b></p>
+              <p style="margin-top: 2%"><i>"It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."</i> </p>    
+          </div>
+
+          <a class="tprev" onclick="tplusSlides(-1)">❮</a>
+          <a class="tnext" onclick="tplusSlides(1)">❯</a>
+
+          </div>
+
+          <div class="tdot-container">
+            <span class="tdot" onclick="tcurrentSlide(1)"></span> 
+            <span class="tdot" onclick="tcurrentSlide(2)"></span> 
+            <span class="tdot" onclick="tcurrentSlide(3)"></span> 
+          </div>
+            
+        </div>
+      </div>
+    </section>
+    
+        <!--
+        End Testimonials
+        ==================================== -->
     
     
 <?php $this->load->view("_partials/contact")?>

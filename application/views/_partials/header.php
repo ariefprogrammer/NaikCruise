@@ -273,12 +273,82 @@
           /*======================================================================================================================*/
 
 
-
-
-
           /* On smaller screens, decrease text size */
           @media only screen and (max-width: 300px) {
             .facility-prev, .facility-next,.facility-text {font-size: 11px}
+          }
+
+          /*Testimonial css*/
+          /* Slideshow container */
+          .tslideshow-container {
+            position: relative;
+            background: #e9e9e9;
+          }
+
+          /* Slides */
+          .tmySlides {
+            display: none;
+            padding: 80px;
+            text-align: center;
+          }
+
+          /* Next & previous buttons */
+          .tprev, .tnext {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -30px;
+            padding: 16px;
+            color: #888;
+            font-weight: bold;
+            font-size: 20px;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          /* Position the "next button" to the right */
+          .tnext {
+            position: absolute;
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+          /* On hover, add a black background color with a little bit see-through */
+          .tprev:hover, .tnext:hover {
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+          }
+
+          /* The dot/bullet/indicator container */
+          .tdot-container {
+              text-align: center;
+              padding: 20px;
+              background: #e9e9e9;
+          }
+
+          /* The dots/bullets/indicators */
+          .tdot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+          }
+
+          /* Add a background color to the active dot/circle */
+          .tactive, .tdot:hover {
+            background-color: #717171;
+          }
+
+
+          /* Add a blue color to the author */
+          .tauthor {
+            color: cornflowerblue;
+            font-size: 16px;
           }
           </style>
         <!-- Bootstrap css -->

@@ -38,12 +38,13 @@ class MProducts extends CI_Model
 		return false;
 		}
 	}
-
+ 
 	public function getAll()
 	{
-		$this->db->select('tb_products.*, tb_ships_list.*');
+		$this->db->select('tb_products.*, tb_ships_list.*, tb_status.*');
 		$this->db->from('tb_products');
-		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');		
+		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
+		$this->db->join('tb_status', 'tb_products.id_status = tb_status.id_status');		
 		return $this->db->get()->result();
 		// return $this->db->get("tb_products")->result();
 	}
@@ -69,9 +70,10 @@ class MProducts extends CI_Model
 
 	public function getById($id)
 	{
-		$this->db->select('tb_products.*, tb_ships_list.*');
+		$this->db->select('tb_products.*, tb_ships_list.*, tb_status.*');
 		$this->db->from('tb_products');
 		$this->db->join('tb_ships_list', 'tb_products.id_ship_list = tb_ships_list.id_ship_list');
+		$this->db->join('tb_status', 'tb_products.id_status = tb_status.id_status');
 		$this->db->where('id_product', $id);		
 		return $this->db->get()->row();
 		//return $this->db->get_where("tb_products", ["id_product" => $id])->row();
@@ -127,9 +129,8 @@ class MProducts extends CI_Model
 
 		if ($this->upload->do_upload('product_thumbnail')) {
 			return $this->upload->data("file_name");
-		}else{
-			return "default.png";
 		}
+		return "default.jpg";
 	}
 
 

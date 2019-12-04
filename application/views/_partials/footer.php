@@ -181,5 +181,35 @@
 
       document.getElementById("defaultOpen").click();
       </script>
+
+      <!-- Testimonial js -->
+      <script>
+        var tslideIndex = 1;
+        tshowSlides(tslideIndex);
+
+        function tplusSlides(tn) {
+          tshowSlides(tslideIndex += tn);
+        }
+
+        function tcurrentSlide(tn) {
+          tshowSlides(tslideIndex = tn);
+        }
+
+        function tshowSlides(tn) {
+          var ti;
+          var tslides = document.getElementsByClassName("tmySlides");
+          var tdots = document.getElementsByClassName("tdot");
+          if (tn > tslides.length) {tslideIndex = 1}    
+          if (tn < 1) {tslideIndex = tslides.length}
+          for (ti = 0; ti < tslides.length; ti++) {
+              tslides[ti].style.display = "none";  
+          }
+          for (ti = 0; ti < tdots.length; ti++) {
+              tdots[ti].className = tdots[ti].className.replace(" tactive", "");
+          }
+          tslides[tslideIndex-1].style.display = "block";  
+          tdots[tslideIndex-1].className += " tactive";
+        }
+        </script>
     </body>
 </html>

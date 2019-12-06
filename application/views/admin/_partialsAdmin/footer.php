@@ -82,16 +82,17 @@
 
 
   <script>
-  tinymce.init({
-    selector: '#mytextarea'
-  });
-  </script>
-
-  <script>
   function deleteConfirm(url){
     $('#btn-delete').attr('href', url);
     $('#deleteModal').modal();
   }
+  </script>
+
+  <script>
+      CKEDITOR.replace('editorr', {
+        filebrowserUploadUrl: "<?php echo base_url('ckeditor/upload/upload.php')?>",
+        filebrowserUploadMethod: 'form'
+    });
   </script>
 
   <script type="text/javascript">

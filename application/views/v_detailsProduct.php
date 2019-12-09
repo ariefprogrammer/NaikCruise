@@ -46,12 +46,12 @@
 					<div style="margin-top: 2%"></div>
 				  	<?php foreach($viewItineraries as $itin):?>
 				  	<div class="row">
-				  		<div class="col-sm-2">
+				  		<div class="col-sm-2" style="display: inline-block;">
 				  			<img src="<?php echo $itin->img_itinerary?>" width="100%">
 				  		</div>
-					  	<div class="col-sm-9">
+					  	<div class="col-sm-9" style="display: inline-block;">
 					  		<div style="margin-top: 1%">
-					  			<h4><strong><?php echo $itin->day_itinerary?></strong></h4>
+					  			<h4><strong>Day : <?php echo $itin->day_itinerary?></strong></h4>
 					  		</div>					  		
 
 					  		<div style="margin-top: 1%">
@@ -107,10 +107,6 @@
 
 				</div>
 
-				<div id="downloadFlyer" class="det-tabcontent" style="display: inline-block">
-				  <p style="margin-top: 2%;">For more details about this product, clik button to download the flyer.</p>
-				  <a style="width: 25%!important;" href="#" class="btn btn-all btn-block">Download Flyer</a>
-				</div>
       	</div>
 	</section>
 

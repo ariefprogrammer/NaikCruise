@@ -9,4 +9,6 @@
 	</div>	
 </section>
 
+<?php $this->load->view("_partials/contact")?>
+
 <?php $this->load->view("_partials/footer")?>

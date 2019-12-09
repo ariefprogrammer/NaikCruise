@@ -44,7 +44,7 @@
                   <textarea name="message" id="message" placeholder="Message" class="form-control"></textarea>
                 </div>
                 <div class="input-group">
-                  <input type="submit" id="form-submit" class="pull-right" value="Send message">
+                  <input type="submit" id="form-submit" class="pull-right" style="background-color: white; color: black; text-align: center; color: #333; font-weight: bold; " value="Send message">
                 </div>
               </form>
             </div>

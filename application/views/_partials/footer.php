@@ -90,6 +90,23 @@
         <script src="js3/jquery.easing.min.js"></script>
     <!-- jquery easing -->
         <script src="js3/wow.min.js"></script>
+    
+
+    <!-- Navbar Responsive script -->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("rmyTopnav");
+        if (x.className === "rtopnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "rtopnav";
+        }
+      }
+      </script>
+    <!-- End Navbar Responsive script -->
+
+
+
     <script>
       var wow = new WOW ({
         boxClass:     'wow',      // animated element css class (default is wow)

@@ -42,47 +42,7 @@
 
     <!-- css dropdown ship -->
         <style type="text/css">
-          .brands-dropbtn {
-            background-color: #FFFFFF;
-            color: black;
-            border: 2px solid #FF9B2D;
 
-          }
-
-          .brands-dropdown {
-            position: relative;
-            display: inline-block;
-            width: 100%;
-          }
-
-          .brands-dropdown-content {
-            background-color: #e7e7e7;
-            color: black;
-            display: none;
-            text-align: left;
-            position: absolute;
-            min-width:300px;
-            border-radius: 5px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-
-/*          .brands-dropdown-content a {
-            color: black;
-            padding: 3%;
-            text-decoration: none;
-            display: block;
-          }
-
-          .brands-dropdown-content a:hover {background-color: #FF9B2D;border-radius: 5px;}
-
-          .brands-dropdown:hover .brands-dropdown-content {
-            display: block;
-          }
-
-          .brands-dropdown:hover .brands-dropbtn {
-            background-color: #FF9B2D;
-          }*/
 
           .facility-Slides {display: none}
           .facility-img {vertical-align: middle;}
@@ -268,7 +228,7 @@
           }
 
           /*======================================================================================================================*/
-
+          /*Slider for testimonial*/
 
           /* On smaller screens, decrease text size */
           @media only screen and (max-width: 300px) {
@@ -336,17 +296,120 @@
             transition: background-color 0.6s ease;
           }
 
-          /* Add a background color to the active dot/circle */
           .tactive, .tdot:hover {
             background-color: #717171;
           }
 
-
-          /* Add a blue color to the author */
           .tauthor {
             color: cornflowerblue;
             font-size: 16px;
           }
+
+          /*Start menu navbar responsive css*/
+            .rtopnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            .rtopnav a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 17px;
+            }
+
+            .ractive {
+              background-color: #0D47A1;
+              color: white;
+            }
+
+            .rtopnav .ricon {
+              display: none;
+            }
+
+            .rdropdown {
+              float: left;
+              overflow: hidden;
+            }
+
+            .rdropdown .rdropbtn {
+              font-size: 17px;    
+              border: none;
+              outline: none;
+              color: white;
+              padding: 14px 16px;
+              background-color: inherit;
+              font-family: inherit;
+              margin: 0;
+            }
+
+            .rdropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f9f9f9;
+              min-width: 160px;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+
+            .rdropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+
+            .rtopnav a:hover, .rdropdown:hover .rdropbtn {
+              background-color: #555;
+              color: white;
+            }
+
+            .rdropdown-content a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .rdropdown:hover .rdropdown-content {
+              display: block;
+            }
+
+            @media screen and (max-width: 600px) {
+              .rtopnav a:not(:first-child), .rdropdown .rdropbtn {
+                display: none;
+              }
+              .rtopnav a.ricon {
+                float: right;
+                display: block;
+              }
+            }
+
+            @media screen and (max-width: 600px) {
+              .rtopnav.responsive {position: relative;}
+              .rtopnav.responsive .ricon {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .rtopnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+              .rtopnav.responsive .rdropdown {float: none;}
+              .rtopnav.responsive .rdropdown-content {position: relative;}
+              .rtopnav.responsive .rdropdown .rdropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+              }
+            }
+            
+          /*End menu navbar responsive css*/
           </style>
         <!-- Bootstrap css -->
 
@@ -380,29 +443,35 @@
         </ul>
     </div> -->
 
-    <div class="w3-navbar">
-      <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'active': ''?>" >Home</a>
-      <div class="w3-dropdown ">
-        <button class="w3-dropbtn">Plans 
+    <!-- Start Navbar Responsive -->
+    
+    <div class="rtopnav" id="rmyTopnav">
+      <a href="<?php echo site_url('')?>" class="<?php echo $this->uri->segment(1)== ''? 'ractive': ''?>" >Home</a>
+      <div class="rdropdown">
+        <button class="rdropbtn">Plans 
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="w3-dropdown-content">
+        <div class="rdropdown-content">
           <a href="<?php echo site_url('ourships')?>">Our ships</a>
           <a href="#">Destination</a>
         </div>
       </div>
-      <a href="<?php echo site_url('products')?>" class="<?php echo $this->uri->segment(1)== 'products'? 'active': ''?>">Products</a>
-      <div class="w3-dropdown">
-        <button class="w3-dropbtn">How to? 
+      
+      <a href="<?php echo site_url('products')?>" class="<?php echo $this->uri->segment(1)== 'products'? 'ractive': ''?>">Products</a>
+      
+      <div class="rdropdown">
+        <button class="rdropbtn" class="ractive">How to? 
           <i class="fa fa-caret-down"></i>
         </button>
-        <div class="w3-dropdown-content">
+        <div class="rdropdown-content">
           <a href="<?php echo site_url('howto/getticket')?>">Get a ticket</a>
           <a href="<?php echo site_url('howto/boardingday')?>">Boarding Day</a>
         </div>
       </div>
-      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'active': ''?>">Branches</a>
+      <a href="<?php echo site_url('branches')?>" class="<?php echo $this->uri->segment(1)== 'branches'? 'ractive': ''?>">Branches</a>
       <a href="#">About</a>
-      <a href="<?php echo site_url('faq')?>">FAQ</a>
+      <a href="<?php echo site_url('faq')?>" class="<?php echo $this->uri->segment(1)== 'faq'? 'ractive': ''?>">FAQ</a>
+      
+      <a href="javascript:void(0);" style="font-size:15px;" class="ricon" onclick="myFunction()">&#9776;</a>
     </div>
     <!-- End Navbar -->

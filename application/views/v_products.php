@@ -25,7 +25,7 @@
 	                <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>"><button class="btn btn-all btn-block" style="margin-top: 7%;"><b>Details</b></button></a> 
 	              </figcaption>
 	            </div>
-	            <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>"><h4><?php echo $all->product_name?></h4></a>
+	            <a href="<?php echo site_url('products/view/'.$all->id_product.'/'.$all->product_slug)?>"><h4 style="overflow: hidden;text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;"><?php echo $all->product_name?></h4></a>
 	          </figure>
           </a>
           <!-- end single member -->

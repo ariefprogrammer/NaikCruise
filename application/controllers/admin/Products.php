@@ -63,7 +63,7 @@ class Products extends CI_Controller
 		if ($this->session->userdata('isloggedin')) {
 			$data["product"] = $this->MProducts->getById($id);		
 			$data["lihatItinerary"] = $this->MProducts->lihatItinerary($id);
-			$data["lihatImageSlider"] =$this->MProducts->lihatImageSlider();
+			$data["lihatImageSlider"] =$this->MProducts->lihatImageSlider($id);
 			$this->load->view("admin/v_DetailsProduct", $data);
 		}else{
 			redirect("admin/user/login");

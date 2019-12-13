@@ -114,7 +114,7 @@
 
 		<div class="form-group">
 			<label>Flyer</label>
-			<input class="form-control" type="text" name="product_flyer" placeholder="Type link here" value="">
+			<input class="form-control" type="text" name="product_flyer" placeholder="Type link here">
 		</div>
 
 		<div class="form-group">

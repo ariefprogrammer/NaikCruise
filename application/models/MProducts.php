@@ -26,11 +26,11 @@ class MProducts extends CI_Model
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
 		$product_terms = $this->db->escape($post["product_terms"]);
-		$product_thumbnail = $this->_uploadThumbnail();
+		$product_thumbnail = $this->_uploadImage();
 		$product_flyer = $this->db->escape($post["product_flyer"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
-		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, product_included, $product_excluded, $product_terms, '$product_thumbnail', product_flyer, $id_status)");
+		$sql = $this->db->query("INSERT INTO tb_products VALUES ($id_product, $product_name, $product_code, $position_order, $product_slug, $product_collection, $product_maximum_child_age, $product_highlight_date, $product_total_days, $product_total_nights, $product_starting_price, $product_price_info, $id_ship_list, $product_accomodation, product_included, $product_excluded, $product_terms, '$product_thumbnail', $product_flyer, $id_status)");
 
 		if($sql){
 			return true;
@@ -103,7 +103,7 @@ class MProducts extends CI_Model
 		$product_included = $this->db->escape($post["product_included"]);
 		$product_excluded = $this->db->escape($post["product_excluded"]);
 		$product_terms = $this->db->escape($post["product_terms"]);
-		$product_thumbnail = $this->_uploadThumbnail();
+		$product_thumbnail = $this->_uploadImage();
 		$product_flyer = $this->db->escape($post["product_flyer"]);
 		$id_status = $this->db->escape($post["id_status"]);
 
@@ -117,20 +117,23 @@ class MProducts extends CI_Model
 		return $this->db->delete("tb_products", array("id_product"=>$id));
 	}
 
-	private function _uploadThumbnail()
+	private function _uploadImage()
 	{
-		$config['upload_path'] = './img3/thumbnail/';
-		$config['allowed_types'] = 'gif|jpg|jpeg|png';
-		$config['file_name'] = uniqid();
-		$config['overwrite'] = true;
-		$config['max_size'] = 5000;
+	    $config['upload_path']          = './images/';
+	    $config['allowed_types']        = 'gif|jpg|png';
+	    $config['file_name']            = $this->product_id;
+	    $config['overwrite']			= true;
+	    $config['max_size']             = 1024; // 1MB
+	    // $config['max_width']            = 1024;
+	    // $config['max_height']           = 768;
 
-		$this->load->library('upload', $config);
+	    $this->load->library('upload', $config);
 
-		if ($this->upload->do_upload('product_thumbnail')) {
-			return $this->upload->data("file_name");
-		}
-		return "default.jpg";
+	    if ($this->upload->do_upload('product_thumbnail')) {
+	        return $this->upload->data("file_name");
+	    }else{
+	    	return "default.jpg";
+	    }	   	   
 	}
 
 
@@ -217,9 +220,11 @@ class MProducts extends CI_Model
 		return $this->db->delete("tb_image_slider_product", array("id_image_slider_product"=>$id_imageSlider));
 	}
 
-	public function lihatImageSlider()
+	public function lihatImageSlider($id)
 	{
-		return $this->db->get("tb_image_slider_product")->result();
+		$sql = $this->db->query("SELECT * FROM tb_image_slider_product WHERE id_product= $id ");
+		return $sql->result();
+		// return $this->db->get("tb_image_slider_product")->result();
 	}
 
 	public function getImageById($id_imageSlider)
